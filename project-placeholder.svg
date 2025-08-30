@@ -1,0 +1,9 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#F7F4F0"/>
+  <rect x="50" y="50" width="300" height="200" fill="#E8DDD4" stroke="#A67C52" stroke-width="2"/>
+  <rect x="80" y="80" width="60" height="80" fill="#1B3B36" opacity="0.3"/>
+  <rect x="160" y="80" width="60" height="80" fill="#1B3B36" opacity="0.3"/>
+  <rect x="240" y="80" width="60" height="80" fill="#1B3B36" opacity="0.3"/>
+  <rect x="80" y="180" width="240" height="40" fill="#A67C52" opacity="0.5"/>
+  <text x="200" y="260" text-anchor="middle" fill="#1B3B36" font-family="serif" font-size="14" font-weight="500">Architecture Project</text>
+</svg>
