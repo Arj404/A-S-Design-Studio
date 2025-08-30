@@ -287,6 +287,15 @@ header.scrolled .logo-img {
   height: 45px;
 }
 
+/* Fallback logo text styling */
+.logo-fallback {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  color: var(--primary-color);
+  letter-spacing: -0.02em;
+}
+
 nav ul {
   list-style: none;
   display: flex;
