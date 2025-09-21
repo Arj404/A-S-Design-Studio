@@ -4,14 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The A&S Design Studio | Architecture & Design</title>
-    <meta name="description" content="The A&S Design Studio - Creating exceptional architectural experiences in retail and residential spaces.">
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    
+    <meta
+      name="description"
+      content="The A&S Design Studio - Creating exceptional architectural experiences in retail and residential spaces."
+    />
+    <!-- Modular CSS Architecture -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/pages.css" />
+    <link rel="stylesheet" href="assets/css/icons.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/general/favicon.svg" />
+
     <!-- Preload critical fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <!-- Optimized font loading -->
     <link
       rel="preload"
@@ -23,21 +31,23 @@
       as="style"
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap"
     />
-    
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
-      media="print" onload="this.media='all'"
+      media="print"
+      onload="this.media='all'"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap"
       rel="stylesheet"
-      media="print" onload="this.media='all'"
+      media="print"
+      onload="this.media='all'"
     />
-    
+
     <!-- Preload logo for better performance -->
-    <link rel="preload" as="image" href="logo.png" />
-    
+    <link rel="preload" as="image" href="assets/images/general/logo.png" />
+
     <!-- Preload critical libraries -->
     <link
       rel="preload"
@@ -49,44 +59,106 @@
       as="style"
       href="https://unpkg.com/aos@2.3.1/dist/aos.css"
     />
-    
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      media="print" onload="this.media='all'"
+      media="print"
+      onload="this.media='all'"
     />
-    <link 
-      href="https://unpkg.com/aos@2.3.1/dist/aos.css" 
-      rel="stylesheet" 
-      media="print" onload="this.media='all'"
+    <link
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
   </head>
   <body>
-    <!-- Header / Navigation -->
-    <header id="header" role="banner">
-      <nav role="navigation" aria-label="Main navigation">
-        <div class="logo">
-          <a href="#home">
-            <img src="logo.png" alt="The A&S Design Studio" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
-            <span class="logo-fallback" style="display: none;">The A&S Design Studio</span>
+    <!-- Enhanced Header / Navigation -->
+    <header id="header" class="header" role="banner">
+      <nav class="header__nav" role="navigation" aria-label="Main navigation">
+        <div class="header__logo">
+          <a href="#home" class="header__logo-link" aria-label="The A&S Design Studio - Home">
+            <img
+              src="assets/images/general/logo.png"
+              alt="The A&S Design Studio"
+              class="header__logo-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+            />
+            <span class="header__logo-text" style="display: none"
+              >The A&S Design Studio</span
+            >
           </a>
         </div>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <button 
+          class="header__mobile-toggle" 
+          aria-label="Toggle mobile menu"
+          aria-expanded="false"
+          aria-controls="main-navigation"
+        >
+          <span class="header__mobile-toggle-bar"></span>
+          <span class="header__mobile-toggle-bar"></span>
+          <span class="header__mobile-toggle-bar"></span>
+        </button>
+        <ul class="header__menu" id="main-navigation" role="menubar">
+          <li class="header__menu-item" role="none">
+            <a href="#home" class="header__menu-link header__menu-link--active" role="menuitem">
+              Home
+            </a>
+          </li>
+          <li class="header__menu-item" role="none">
+            <a href="#about" class="header__menu-link" role="menuitem">
+              About
+            </a>
+          </li>
+          <li class="header__menu-item" role="none">
+            <a href="#projects" class="header__menu-link" role="menuitem">
+              Projects
+            </a>
+          </li>
+          <li class="header__menu-item" role="none">
+            <a href="#contact" class="header__menu-link" role="menuitem">
+              Contact
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
 
+    <!-- Breadcrumb Navigation (hidden by default, can be shown on sub-pages) -->
+    <nav class="breadcrumb" aria-label="Breadcrumb navigation" style="display: none;">
+      <a href="#home" class="breadcrumb__item">Home</a>
+      <span class="breadcrumb__separator">&raquo;</span>
+      <span class="breadcrumb__item breadcrumb__item--current">Current Page</span>
+    </nav>
+
     <main role="main">
       <!-- Enhanced Hero Section -->
       <section id="home" class="hero" aria-labelledby="hero-heading">
-        <div class="hero-content" data-aos="fade-up">
-          <h1 id="hero-heading" class="hero-title">The A&S Design Studio</h1>
-          <p class="hero-subtitle">Creating timeless architectural experiences in retail and residential spaces</p>
-          <a href="#projects" class="btn btn-outline">View Our Work</a>
+        <div class="hero__content" data-aos="fade-up">
+          <h1 id="hero-heading" class="hero__title">The A&S Design Studio</h1>
+          <p class="hero__subtitle">
+            Creating timeless architectural experiences in retail and
+            residential spaces
+          </p>
+          <div class="hero__cta">
+            <a href="#projects" class="btn btn--primary">Explore Our Portfolio</a>
+            <a href="#contact" class="btn btn--outline">Start Your Project</a>
+          </div>
+          <div class="hero__stats" data-aos="fade-up" data-aos-delay="200">
+            <div class="hero__stat">
+              <span class="hero__stat-number">50+</span>
+              <span class="hero__stat-label">Projects Completed</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-number">7+</span>
+              <span class="hero__stat-label">Years Experience</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-number">100%</span>
+              <span class="hero__stat-label">Client Satisfaction</span>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -98,110 +170,443 @@
             <div class="about-text">
               <h3>Our Story</h3>
               <p>
-                The A&S Design Studio is a forward-thinking architectural practice led by Ar. Shreya Jain, dedicated to creating exceptional spaces that blend functionality with aesthetic excellence. With expertise spanning retail and residential architecture, we transform concepts into tangible experiences that stand the test of time.
+                The A&S Design Studio is a forward-thinking architectural
+                practice led by Ar. Shreya Jain, dedicated to creating
+                exceptional spaces that blend functionality with aesthetic
+                excellence. With expertise spanning retail and residential
+                architecture, we transform concepts into tangible experiences
+                that stand the test of time.
               </p>
               <p>
-                Our approach combines innovative design thinking with practical construction knowledge, ensuring that every project we undertake not only looks stunning but also functions seamlessly for its intended purpose. We believe that great architecture is born from a deep understanding of space, light, materials, and human interaction.
+                Our approach combines innovative design thinking with practical
+                construction knowledge, ensuring that every project we undertake
+                not only looks stunning but also functions seamlessly for its
+                intended purpose. We believe that great architecture is born
+                from a deep understanding of space, light, materials, and human
+                interaction.
               </p>
             </div>
             <div class="about-text">
               <h3>Design Philosophy</h3>
               <p>
-                At The A&S Design Studio, we believe that architecture should tell a story. Each project is an opportunity to create spaces that resonate with the people who use them, reflecting their values and aspirations while respecting the surrounding environment. We strive to balance innovation with timelessness, creating designs that are both contemporary and enduring.
+                At The A&S Design Studio, we believe that architecture should
+                tell a story. Each project is an opportunity to create spaces
+                that resonate with the people who use them, reflecting their
+                values and aspirations while respecting the surrounding
+                environment. We strive to balance innovation with timelessness,
+                creating designs that are both contemporary and enduring.
               </p>
             </div>
           </div>
         </div>
       </section>
-      <!-- Projects Grid -->
-      <section id="projects" class="grid-container" aria-labelledby="projects-heading">
-        <div class="projects-container">
-          <h2 id="projects-heading" class="section-title" data-aos="fade-up">Featured Projects</h2>
+
+      <!-- Services Overview Section -->
+      <section id="services-overview" class="services-overview" aria-labelledby="services-heading">
+        <div class="services-overview__container">
+          <h2 id="services-heading" class="section-title" data-aos="fade-up">Our Services</h2>
+          <p class="services-overview__intro" data-aos="fade-up" data-aos-delay="100">
+            We specialize in creating exceptional architectural experiences across residential, commercial, and retail spaces.
+          </p>
           
-          <!-- UPDATED: Adding filter controls for project categories -->
-          <div class="project-filters" data-aos="fade-up">
-            <button class="filter-btn active" data-filter="all">All Projects</button>
-            <button class="filter-btn" data-filter="retail">Retail</button>
-            <button class="filter-btn" data-filter="residential">Residential</button>
-            <button class="filter-btn" data-filter="commercial">Commercial</button>
+          <div class="services-overview__grid">
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-card__icon">
+                <i class="fas fa-home" aria-hidden="true"></i>
+              </div>
+              <div class="service-card__content">
+                <h3 class="service-card__title">Residential Architecture</h3>
+                <p class="service-card__description">
+                  Custom home design, luxury villas, and residential complexes that blend comfort with contemporary aesthetics.
+                </p>
+                <ul class="service-card__features">
+                  <li>Custom Home Design</li>
+                  <li>Renovation & Remodeling</li>
+                  <li>Interior Architecture</li>
+                </ul>
+                <a href="services.html#residential" class="service-card__link">Learn More</a>
+              </div>
+            </div>
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-card__icon">
+                <i class="fas fa-store" aria-hidden="true"></i>
+              </div>
+              <div class="service-card__content">
+                <h3 class="service-card__title">Retail Design</h3>
+                <p class="service-card__description">
+                  Innovative retail environments that enhance customer experience and reflect brand identity.
+                </p>
+                <ul class="service-card__features">
+                  <li>Showroom Design</li>
+                  <li>Brand Experience</li>
+                  <li>Visual Merchandising</li>
+                </ul>
+                <a href="services.html#retail" class="service-card__link">Learn More</a>
+              </div>
+            </div>
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+              <div class="service-card__icon">
+                <i class="fas fa-building" aria-hidden="true"></i>
+              </div>
+              <div class="service-card__content">
+                <h3 class="service-card__title">Commercial Architecture</h3>
+                <p class="service-card__description">
+                  Office complexes, mixed-use developments, and commercial spaces designed for functionality and impact.
+                </p>
+                <ul class="service-card__features">
+                  <li>Office Design</li>
+                  <li>Mixed-Use Development</li>
+                  <li>Corporate Spaces</li>
+                </ul>
+                <a href="services.html#commercial" class="service-card__link">Learn More</a>
+              </div>
+            </div>
           </div>
+        </div>
+      </section>
+
+      <!-- Featured Projects Carousel -->
+      <section id="featured-projects" class="featured-projects" aria-labelledby="featured-heading">
+        <div class="featured-projects__container">
+          <h2 id="featured-heading" class="section-title" data-aos="fade-up">Featured Projects</h2>
+          <p class="featured-projects__intro" data-aos="fade-up" data-aos-delay="100">
+            Discover our most celebrated architectural achievements
+          </p>
           
+          <div class="carousel" data-aos="fade-up" data-aos-delay="200">
+            <div class="carousel__container">
+              <div class="carousel__track" id="featuredCarousel">
+                <div class="carousel__slide carousel__slide--active">
+                  <div class="featured-project">
+                    <div class="featured-project__image">
+                      <img src="assets/images/projects/project-placeholder.svg" alt="Kapsons-Solan Retail Project" loading="lazy">
+                    </div>
+                    <div class="featured-project__content">
+                      <h3 class="featured-project__title">Kapsons-Solan</h3>
+                      <p class="featured-project__category">Retail Design</p>
+                      <p class="featured-project__description">
+                        A sophisticated retail environment that seamlessly blends modern aesthetics with functional design, creating an immersive shopping experience.
+                      </p>
+                      <a href="project-detail.html?project=kapsons-solan" class="btn btn--outline btn--small">View Project</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel__slide">
+                  <div class="featured-project">
+                    <div class="featured-project__image">
+                      <img src="assets/images/projects/project-placeholder.svg" alt="City Mall Yamunanagar" loading="lazy">
+                    </div>
+                    <div class="featured-project__content">
+                      <h3 class="featured-project__title">City Mall Yamunanagar</h3>
+                      <p class="featured-project__category">Commercial Architecture</p>
+                      <p class="featured-project__description">
+                        Large-scale commercial architecture featuring innovative space planning and sustainable design principles.
+                      </p>
+                      <a href="project-detail.html?project=city-mall" class="btn btn--outline btn--small">View Project</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel__slide">
+                  <div class="featured-project">
+                    <div class="featured-project__image">
+                      <img src="assets/images/projects/project-placeholder.svg" alt="Luxury Residential Complex" loading="lazy">
+                    </div>
+                    <div class="featured-project__content">
+                      <h3 class="featured-project__title">Luxury Residential Complex</h3>
+                      <p class="featured-project__category">Residential Architecture</p>
+                      <p class="featured-project__description">
+                        Contemporary residential architecture that prioritizes natural light, privacy, and connection to landscape.
+                      </p>
+                      <a href="project-detail.html?project=luxury-residential" class="btn btn--outline btn--small">View Project</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="carousel__controls">
+              <button class="carousel__btn carousel__btn--prev" aria-label="Previous project">
+                <i class="fas fa-chevron-left" aria-hidden="true"></i>
+              </button>
+              <button class="carousel__btn carousel__btn--next" aria-label="Next project">
+                <i class="fas fa-chevron-right" aria-hidden="true"></i>
+              </button>
+            </div>
+            
+            <div class="carousel__indicators">
+              <button class="carousel__indicator carousel__indicator--active" data-slide="0" aria-label="Go to slide 1"></button>
+              <button class="carousel__indicator" data-slide="1" aria-label="Go to slide 2"></button>
+              <button class="carousel__indicator" data-slide="2" aria-label="Go to slide 3"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Grid -->
+      <section
+        id="projects"
+        class="grid-container"
+        aria-labelledby="projects-heading"
+      >
+        <div class="projects-container">
+          <h2 id="projects-heading" class="section-title" data-aos="fade-up">
+            Featured Projects
+          </h2>
+
+          <!-- UPDATED: Adding filter controls for project categories -->
+          <div class="filter" data-aos="fade-up">
+            <button class="filter__btn filter__btn--active" data-filter="all">
+              All Projects
+            </button>
+            <button class="filter__btn" data-filter="retail">Retail</button>
+            <button class="filter__btn" data-filter="residential">
+              Residential
+            </button>
+            <button class="filter__btn" data-filter="commercial">
+              Commercial
+            </button>
+          </div>
+
           <!-- UPDATED: Implementing masonry grid layout -->
-          <div class="project-masonry-grid">
+          <div class="grid grid--auto-fit">
             <div class="project-card retail" data-aos="fade-up">
-              <div class="project-image">
-                <img src="project-placeholder.svg" alt="Kapsons-Solan Retail Project" loading="lazy" />
+              <div class="project-card__image">
+                <img
+                  src="assets/images/projects/project-placeholder.svg"
+                  alt="Kapsons-Solan Retail Project"
+                  loading="lazy"
+                />
+                <div class="project-card__overlay">
+                  <a href="#" class="project-card__view-btn">View Project</a>
+                </div>
               </div>
-              <div class="project-content">
-                <h4>Kapsons-Solan</h4>
-                <p>A sophisticated retail environment that seamlessly blends modern aesthetics with functional design, creating an immersive shopping experience that reflects the brand's premium positioning.</p>
-                <div class="project-meta">
-                  <span class="project-type">Retail</span>
+              <div class="project-card__content">
+                <h4 class="project-card__title">Kapsons-Solan</h4>
+                <p class="project-card__description">
+                  A sophisticated retail environment that seamlessly blends
+                  modern aesthetics with functional design, creating an
+                  immersive shopping experience that reflects the brand's
+                  premium positioning.
+                </p>
+                <div class="project-card__meta">
+                  <span class="project-card__type">Retail</span>
                 </div>
               </div>
             </div>
-            
+
             <div class="project-card commercial" data-aos="fade-up">
-              <div class="project-image">
-                <img src="project-placeholder.svg" alt="City Mall Yamunanagar Commercial Project" loading="lazy" />
+              <div class="project-card__image">
+                <img
+                  src="assets/images/projects/project-placeholder.svg"
+                  alt="City Mall Yamunanagar Commercial Project"
+                  loading="lazy"
+                />
+                <div class="project-card__overlay">
+                  <a href="#" class="project-card__view-btn">View Project</a>
+                </div>
               </div>
-              <div class="project-content">
-                <h4>City Mall Yamunanagar</h4>
-                <p>Large-scale commercial architecture featuring innovative space planning, sustainable design principles, and a harmonious integration of retail, dining, and entertainment zones.</p>
-                <div class="project-meta">
-                  <span class="project-type">Commercial</span>
+              <div class="project-card__content">
+                <h4 class="project-card__title">City Mall Yamunanagar</h4>
+                <p class="project-card__description">
+                  Large-scale commercial architecture featuring innovative space
+                  planning, sustainable design principles, and a harmonious
+                  integration of retail, dining, and entertainment zones.
+                </p>
+                <div class="project-card__meta">
+                  <span class="project-card__type">Commercial</span>
                 </div>
               </div>
             </div>
-            
+
             <div class="project-card residential" data-aos="fade-up">
-              <div class="project-image">
-                <img src="project-placeholder.svg" alt="Luxury Residential Complex Project" loading="lazy" />
+              <div class="project-card__image">
+                <img
+                  src="assets/images/projects/project-placeholder.svg"
+                  alt="Luxury Residential Complex Project"
+                  loading="lazy"
+                />
+                <div class="project-card__overlay">
+                  <a href="#" class="project-card__view-btn">View Project</a>
+                </div>
               </div>
-              <div class="project-content">
-                <h4>Luxury Residential Complex</h4>
-                <p>Contemporary residential architecture that prioritizes natural light, privacy, and connection to landscape, featuring sustainable materials and energy-efficient design solutions.</p>
-                <div class="project-meta">
-                  <span class="project-type">Residential</span>
+              <div class="project-card__content">
+                <h4 class="project-card__title">Luxury Residential Complex</h4>
+                <p class="project-card__description">
+                  Contemporary residential architecture that prioritizes natural
+                  light, privacy, and connection to landscape, featuring
+                  sustainable materials and energy-efficient design solutions.
+                </p>
+                <div class="project-card__meta">
+                  <span class="project-card__type">Residential</span>
                 </div>
               </div>
             </div>
-            
+
             <div class="project-card commercial" data-aos="fade-up">
-              <div class="project-image">
-                <img src="project-placeholder.svg" alt="Corporate Office Complex Project" loading="lazy" />
+              <div class="project-card__image">
+                <img
+                  src="assets/images/projects/project-placeholder.svg"
+                  alt="Corporate Office Complex Project"
+                  loading="lazy"
+                />
+                <div class="project-card__overlay">
+                  <a href="#" class="project-card__view-btn">View Project</a>
+                </div>
               </div>
-              <div class="project-content">
-                <h4>Corporate Office Complex</h4>
-                <p>Modern workplace design that fosters collaboration and productivity through flexible spaces, biophilic elements, and cutting-edge technology integration.</p>
-                <div class="project-meta">
-                  <span class="project-type">Commercial</span>
+              <div class="project-card__content">
+                <h4 class="project-card__title">Corporate Office Complex</h4>
+                <p class="project-card__description">
+                  Modern workplace design that fosters collaboration and
+                  productivity through flexible spaces, biophilic elements, and
+                  cutting-edge technology integration.
+                </p>
+                <div class="project-card__meta">
+                  <span class="project-card__type">Commercial</span>
                 </div>
               </div>
             </div>
-            
+
             <div class="project-card retail" data-aos="fade-up">
-              <div class="project-image">
-                <img src="project-placeholder.svg" alt="Boutique Showroom Project" loading="lazy" />
+              <div class="project-card__image">
+                <img
+                  src="assets/images/projects/project-placeholder.svg"
+                  alt="Boutique Showroom Project"
+                  loading="lazy"
+                />
+                <div class="project-card__overlay">
+                  <a href="#" class="project-card__view-btn">View Project</a>
+                </div>
               </div>
-              <div class="project-content">
-                <h4>Boutique Showroom</h4>
-                <p>Intimate retail space designed to showcase luxury products through carefully curated lighting, premium materials, and an elegant spatial flow that enhances the customer journey.</p>
-                <div class="project-meta">
-                  <span class="project-type">Retail</span>
+              <div class="project-card__content">
+                <h4 class="project-card__title">Boutique Showroom</h4>
+                <p class="project-card__description">
+                  Intimate retail space designed to showcase luxury products
+                  through carefully curated lighting, premium materials, and an
+                  elegant spatial flow that enhances the customer journey.
+                </p>
+                <div class="project-card__meta">
+                  <span class="project-card__type">Retail</span>
                 </div>
               </div>
             </div>
-            
+
             <div class="project-card residential" data-aos="fade-up">
-              <div class="project-image">
-                <img src="project-placeholder.svg" alt="Modern Villa Project" loading="lazy" />
+              <div class="project-card__image">
+                <img
+                  src="assets/images/projects/project-placeholder.svg"
+                  alt="Modern Villa Project"
+                  loading="lazy"
+                />
+                <div class="project-card__overlay">
+                  <a href="#" class="project-card__view-btn">View Project</a>
+                </div>
               </div>
-              <div class="project-content">
-                <h4>Modern Villa</h4>
-                <p>Bespoke residential design that seamlessly integrates indoor and outdoor living, featuring clean lines, natural materials, and panoramic views of the surrounding landscape.</p>
-                <div class="project-meta">
-                  <span class="project-type">Residential</span>
+              <div class="project-card__content">
+                <h4 class="project-card__title">Modern Villa</h4>
+                <p class="project-card__description">
+                  Bespoke residential design that seamlessly integrates indoor
+                  and outdoor living, featuring clean lines, natural materials,
+                  and panoramic views of the surrounding landscape.
+                </p>
+                <div class="project-card__meta">
+                  <span class="project-card__type">Residential</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Client Testimonials Section -->
+      <section id="testimonials" class="testimonials" aria-labelledby="testimonials-heading">
+        <div class="testimonials__container">
+          <h2 id="testimonials-heading" class="section-title" data-aos="fade-up">What Our Clients Say</h2>
+          <p class="testimonials__intro" data-aos="fade-up" data-aos-delay="100">
+            Hear from the clients who trusted us with their architectural dreams
+          </p>
+          
+          <div class="testimonials__grid">
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="testimonial-card__content">
+                <div class="testimonial-card__quote">
+                  <i class="fas fa-quote-left" aria-hidden="true"></i>
+                  <p>
+                    "The A&S Design Studio transformed our retail space beyond our expectations. Their attention to detail and understanding of our brand identity resulted in a showroom that perfectly reflects our values."
+                  </p>
+                </div>
+                <div class="testimonial-card__author">
+                  <div class="testimonial-card__avatar">
+                    <img src="assets/images/general/client-avatar-1.svg" alt="Rajesh Kumar" loading="lazy">
+                  </div>
+                  <div class="testimonial-card__info">
+                    <h4 class="testimonial-card__name">Rajesh Kumar</h4>
+                    <p class="testimonial-card__role">CEO, Kapsons Group</p>
+                    <div class="testimonial-card__rating">
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+              <div class="testimonial-card__content">
+                <div class="testimonial-card__quote">
+                  <i class="fas fa-quote-left" aria-hidden="true"></i>
+                  <p>
+                    "Working with Shreya and her team was an absolute pleasure. They delivered a residential complex that perfectly balances luxury with functionality. Every detail was thoughtfully considered."
+                  </p>
+                </div>
+                <div class="testimonial-card__author">
+                  <div class="testimonial-card__avatar">
+                    <img src="assets/images/general/client-avatar-2.svg" alt="Priya Sharma" loading="lazy">
+                  </div>
+                  <div class="testimonial-card__info">
+                    <h4 class="testimonial-card__name">Priya Sharma</h4>
+                    <p class="testimonial-card__role">Property Developer</p>
+                    <div class="testimonial-card__rating">
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="400">
+              <div class="testimonial-card__content">
+                <div class="testimonial-card__quote">
+                  <i class="fas fa-quote-left" aria-hidden="true"></i>
+                  <p>
+                    "The commercial space designed by A&S Design Studio has significantly improved our business operations. The design is both aesthetically pleasing and highly functional."
+                  </p>
+                </div>
+                <div class="testimonial-card__author">
+                  <div class="testimonial-card__avatar">
+                    <img src="assets/images/general/client-avatar-3.svg" alt="Amit Gupta" loading="lazy">
+                  </div>
+                  <div class="testimonial-card__info">
+                    <h4 class="testimonial-card__name">Amit Gupta</h4>
+                    <p class="testimonial-card__role">Business Owner</p>
+                    <div class="testimonial-card__rating">
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -213,26 +618,32 @@
       <section id="contact" aria-labelledby="contact-heading">
         <div class="contact-container">
           <div class="contact-content">
-            <h2 id="contact-heading">Let's Create Something Amazing Together</h2>
+            <h2 id="contact-heading">
+              Let's Create Something Amazing Together
+            </h2>
             <p>
-              At The A&S Design Studio, we're passionate about transforming spaces and bringing architectural visions to life. Whether you're planning a retail establishment, residential complex, or commercial facility, we're here to help you create something exceptional.
+              At The A&S Design Studio, we're passionate about transforming
+              spaces and bringing architectural visions to life. Whether you're
+              planning a retail establishment, residential complex, or
+              commercial facility, we're here to help you create something
+              exceptional.
             </p>
             <div class="contact-info">
               <div class="info-item">
                 <h3>Contact Information</h3>
                 <p>
-                  <strong>Email:</strong> 
-                  <a href="mailto:info@asdesignstudio.com">the.as.designstudio@gmail.com</a>
+                  <strong>Email:</strong>
+                  <a href="mailto:info@asdesignstudio.com"
+                    >the.as.designstudio@gmail.com</a
+                  >
                 </p>
                 <p>
-                  <strong>Phone:</strong> 
+                  <strong>Phone:</strong>
                   <a href="tel:+917017695498">+91 70176 95498</a>
                 </p>
-                <p>
-                  <strong>Location:</strong> Gurugram, India
-                </p>
+                <p><strong>Location:</strong> Gurugram, India</p>
               </div>
-              
+
               <div class="info-item">
                 <h3>Business Hours</h3>
                 <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
@@ -241,23 +652,53 @@
               </div>
             </div>
           </div>
-          
+
           <div class="contact-form-wrapper">
             <h3>Send us a message</h3>
-            <form class="contact-form" id="contactForm">
-              <div class="form-group">
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <form class="form" id="contactForm">
+              <div class="form__group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                  class="form__input"
+                  required
+                />
               </div>
-              <div class="form-group">
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
+              <div class="form__group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                  class="form__input"
+                  required
+                />
               </div>
-              <div class="form-group">
-                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+              <div class="form__group">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subject"
+                  class="form__input"
+                  required
+                />
               </div>
-              <div class="form-group">
-                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+              <div class="form__group">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Your Message"
+                  rows="5"
+                  class="form__textarea"
+                  required
+                ></textarea>
               </div>
-              <button type="submit" class="btn contact-btn">Send Message</button>
+              <button type="submit" class="btn btn--secondary btn--full-width">
+                Send Message
+              </button>
             </form>
           </div>
         </div>
@@ -268,27 +709,22 @@
     <footer role="contentinfo">
       <div class="footer-content">
         <div class="social-links">
-          <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-          <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-          <a href="#" class="social-link" aria-label="Behance"><i class="fab fa-behance" aria-hidden="true"></i></a>
+          <a href="#" class="social-links__link" aria-label="LinkedIn"
+            ><i class="fab fa-linkedin" aria-hidden="true"></i
+          ></a>
+          <a href="#" class="social-links__link" aria-label="Instagram"
+            ><i class="fab fa-instagram" aria-hidden="true"></i
+          ></a>
+          <a href="#" class="social-links__link" aria-label="Behance"
+            ><i class="fab fa-behance" aria-hidden="true"></i
+          ></a>
         </div>
         <p>&copy; 2025 The A&S Design Studio. All rights reserved.</p>
         <p class="footer-note">Creating timeless architectural experiences</p>
       </div>
     </footer>
 
-    <!-- Add Header Animation Script -->
-    <script>
-      window.addEventListener("scroll", () => {
-        const header = document.getElementById("header");
-        if (window.scrollY > 50) {
-          header.classList.add("scrolled");
-        } else {
-          header.classList.remove("scrolled");
-        }
-      });
-    </script>
-
+    <!-- Enhanced JavaScript Modules -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       // Initialize AOS
@@ -296,112 +732,11 @@
         duration: 800,
         once: true,
       });
-
-      // Add scroll animation for elements
-      const observerOptions = {
-        threshold: 0.1,
-      };
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-          }
-        });
-      }, observerOptions);
-
-      document.querySelectorAll(".fade-up").forEach((element) => {
-        observer.observe(element);
-      });
     </script>
     
-    <!-- Project Filtering JavaScript -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        const projectCards = document.querySelectorAll('.project-card');
-        
-        filterButtons.forEach(button => {
-          button.addEventListener('click', () => {
-            // Remove active class from all buttons
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            
-            // Add active class to clicked button
-            button.classList.add('active');
-            
-            // Get filter value
-            const filterValue = button.getAttribute('data-filter');
-            
-            // Show/hide projects based on filter
-            projectCards.forEach(card => {
-              if (filterValue === 'all' || card.classList.contains(filterValue)) {
-                card.style.display = 'flex';
-              } else {
-                card.style.display = 'none';
-              }
-            });
-          });
-        });
-      });
-    </script>
-    
-    <!-- Enhanced Contact Form JavaScript -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const contactForm = document.getElementById('contactForm');
-        
-        if (contactForm) {
-          contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const submitBtn = contactForm.querySelector('.contact-btn');
-            const originalText = submitBtn.textContent;
-            
-            // Show loading state
-            submitBtn.textContent = 'Sending...';
-            submitBtn.disabled = true;
-            
-            // Get form values
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
-            
-            // Simulate form submission
-            setTimeout(() => {
-              alert(`Thank you ${name} for your message! We'll get back to you soon.`);
-              
-              // Reset form and button
-              contactForm.reset();
-              submitBtn.textContent = originalText;
-              submitBtn.disabled = false;
-            }, 1500);
-          });
-        }
-        
-        // Add smooth reveal animations on scroll
-        const observerOptions = {
-          threshold: 0.1,
-          rootMargin: '0px 0px -50px 0px'
-        };
-        
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.style.opacity = '1';
-              entry.target.style.transform = 'translateY(0)';
-            }
-          });
-        }, observerOptions);
-        
-        // Observe all project cards and about sections
-        document.querySelectorAll('.project-card, .about-text').forEach((element) => {
-          element.style.opacity = '0';
-          element.style.transform = 'translateY(30px)';
-          element.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
-          observer.observe(element);
-        });
-      });
-    </script>
+    <!-- Modular JavaScript Architecture -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/portfolio.js"></script>
+    <script src="assets/js/contact.js"></script>
   </body>
 </html>

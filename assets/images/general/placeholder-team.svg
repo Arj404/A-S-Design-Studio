@@ -1,0 +1,6 @@
+<svg width="280" height="280" viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="280" height="280" fill="#F7F4F0"/>
+  <circle cx="140" cy="100" r="40" fill="#A67C52"/>
+  <path d="M80 220 C80 180, 100 160, 140 160 C180 160, 200 180, 200 220 L200 280 L80 280 Z" fill="#A67C52"/>
+  <text x="140" y="250" text-anchor="middle" fill="#1B3B36" font-family="Inter, sans-serif" font-size="12">Team Member</text>
+</svg>

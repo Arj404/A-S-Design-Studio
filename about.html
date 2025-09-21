@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | The A&S Design Studio | Architecture & Design</title>
+    <meta
+      name="description"
+      content="Learn about The A&S Design Studio - our story, team, design philosophy, and commitment to creating exceptional architectural experiences."
+    />
+    <!-- Modular CSS Architecture -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/pages.css" />
+    <link rel="stylesheet" href="assets/css/icons.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Optimized font loading -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+    />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+
+    <!-- Preload logo for better performance -->
+    <link rel="preload" as="image" href="assets/images/general/logo.png" />
+
+    <!-- Preload critical libraries -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="preload"
+      as="style"
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+  </head>
+  <body class="page-about">
+    <!-- Enhanced Header / Navigation -->
+    <header id="header" class="header" role="banner">
+      <nav class="header__nav" role="navigation" aria-label="Main navigation">
+        <div class="header__logo">
+          <a href="index.html" class="header__logo-link" aria-label="The A&S Design Studio - Home">
+            <img
+              src="assets/images/general/logo.png"
+              alt="The A&S Design Studio"
+              class="header__logo-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+            />
+            <span class="header__logo-text" style="display: none"
+              >The A&S Design Studio</span
+            >
+          </a>
+        </div>
+        <button 
+          class="header__mobile-toggle" 
+          aria-label="Toggle mobile menu"
+          aria-expanded="false"
+          aria-controls="main-navigation"
+        >
+          <span class="header__mobile-toggle-bar"></span>
+          <span class="header__mobile-toggle-bar"></span>
+          <span class="header__mobile-toggle-bar"></span>
+        </button>
+        <ul class="header__menu" id="main-navigation" role="menubar">
+          <li class="header__menu-item" role="none">
+            <a href="index.html" class="header__menu-link" role="menuitem">
+              Home
+            </a>
+          </li>
+          <li class="header__menu-item" role="none">
+            <a href="about.html" class="header__menu-link header__menu-link--active" role="menuitem">
+              About
+            </a>
+          </li>
+          <li class="header__menu-item" role="none">
+            <a href="portfolio.html" class="header__menu-link" role="menuitem">
+              Portfolio
+            </a>
+          </li>
+          <li class="header__menu-item" role="none">
+            <a href="services.html" class="header__menu-link" role="menuitem">
+              Services
+            </a>
+          </li>
+          <li class="header__menu-item" role="none">
+            <a href="contact.html" class="header__menu-link" role="menuitem">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb" aria-label="Breadcrumb navigation">
+      <div class="container">
+        <a href="index.html" class="breadcrumb__item">Home</a>
+        <span class="breadcrumb__separator">&raquo;</span>
+        <span class="breadcrumb__item breadcrumb__item--current">About</span>
+      </div>
+    </nav>
+
+    <main role="main">
+      <!-- About Hero Section -->
+      <section class="about-hero" aria-labelledby="about-hero-heading">
+        <div class="container">
+          <div class="about-hero__content" data-aos="fade-up">
+            <h1 id="about-hero-heading" class="about-hero__title">About The A&S Design Studio</h1>
+            <p class="about-hero__subtitle">
+              Crafting architectural excellence through innovative design, sustainable practices, 
+              and unwavering commitment to our clients' vision.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Firm History & Philosophy Section -->
+      <section class="about-story" aria-labelledby="story-heading">
+        <div class="container">
+          <div class="about-story__content">
+            <div class="about-story__text" data-aos="fade-right">
+              <h2 id="story-heading" class="section-title">Our Story</h2>
+              <p class="about-story__description">
+                Founded with a vision to transform spaces into extraordinary experiences, 
+                The A&S Design Studio has been at the forefront of architectural innovation 
+                for over a decade. Our journey began with a simple belief: that great design 
+                has the power to enhance lives, inspire communities, and create lasting value.
+              </p>
+              <p class="about-story__description">
+                From our humble beginnings as a boutique design firm, we have grown into 
+                a comprehensive architectural studio, specializing in retail and residential 
+                spaces that seamlessly blend functionality with aesthetic excellence. 
+                Every project we undertake is a testament to our commitment to pushing 
+                the boundaries of conventional design.
+              </p>
+            </div>
+            <div class="about-story__image" data-aos="fade-left">
+              <img 
+                src="assets/images/general/studio-workspace.jpg" 
+                alt="The A&S Design Studio workspace showcasing our creative environment"
+                class="about-story__img"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Design Philosophy Section -->
+      <section class="about-philosophy" aria-labelledby="philosophy-heading">
+        <div class="container">
+          <h2 id="philosophy-heading" class="section-title text-center" data-aos="fade-up">Our Design Philosophy</h2>
+          <div class="philosophy-grid">
+            <div class="philosophy-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="philosophy-card__icon">
+                <i class="fas fa-lightbulb" aria-hidden="true"></i>
+              </div>
+              <h3 class="philosophy-card__title">Innovation</h3>
+              <p class="philosophy-card__description">
+                We embrace cutting-edge design trends while respecting timeless principles, 
+                creating spaces that are both contemporary and enduring.
+              </p>
+            </div>
+            <div class="philosophy-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="philosophy-card__icon">
+                <i class="fas fa-leaf" aria-hidden="true"></i>
+              </div>
+              <h3 class="philosophy-card__title">Sustainability</h3>
+              <p class="philosophy-card__description">
+                Environmental responsibility is at the core of our practice. We integrate 
+                sustainable materials and energy-efficient solutions in every project.
+              </p>
+            </div>
+            <div class="philosophy-card" data-aos="fade-up" data-aos-delay="300">
+              <div class="philosophy-card__icon">
+                <i class="fas fa-users" aria-hidden="true"></i>
+              </div>
+              <h3 class="philosophy-card__title">Collaboration</h3>
+              <p class="philosophy-card__description">
+                We believe the best designs emerge from close collaboration with our clients, 
+                understanding their unique needs and translating them into architectural reality.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>      <!
+-- Team Profiles Section -->
+      <section class="about-team" aria-labelledby="team-heading">
+        <div class="container">
+          <h2 id="team-heading" class="section-title text-center" data-aos="fade-up">Meet Our Team</h2>
+          <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="100">
+            Our diverse team of architects, designers, and creative professionals brings 
+            together decades of experience and a shared passion for exceptional design.
+          </p>
+          
+          <div class="team-grid">
+            <!-- Team Member 1 -->
+            <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+              <div class="team-member__image">
+                <img 
+                  src="assets/images/team/architect-1.jpg" 
+                  alt="Arjun Sharma - Principal Architect"
+                  class="team-member__img"
+                  loading="lazy"
+                  onerror="this.src='assets/images/general/placeholder-team.svg'"
+                />
+              </div>
+              <div class="team-member__content">
+                <h3 class="team-member__name">Arjun Sharma</h3>
+                <p class="team-member__role">Principal Architect & Founder</p>
+                <p class="team-member__description">
+                  With over 15 years of experience in architectural design, Arjun leads our 
+                  creative vision and ensures every project meets the highest standards of 
+                  design excellence and functionality.
+                </p>
+                <div class="team-member__credentials">
+                  <span class="credential">M.Arch, IIT Delhi</span>
+                  <span class="credential">LEED AP</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+              <div class="team-member__image">
+                <img 
+                  src="assets/images/team/designer-1.jpg" 
+                  alt="Sneha Patel - Senior Interior Designer"
+                  class="team-member__img"
+                  loading="lazy"
+                  onerror="this.src='assets/images/general/placeholder-team.svg'"
+                />
+              </div>
+              <div class="team-member__content">
+                <h3 class="team-member__name">Sneha Patel</h3>
+                <p class="team-member__role">Senior Interior Designer</p>
+                <p class="team-member__description">
+                  Sneha specializes in creating interior spaces that perfectly complement 
+                  our architectural designs, with a keen eye for detail and a passion 
+                  for sustainable materials.
+                </p>
+                <div class="team-member__credentials">
+                  <span class="credential">B.Des Interior Design</span>
+                  <span class="credential">NCIDQ Certified</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+              <div class="team-member__image">
+                <img 
+                  src="assets/images/team/architect-2.jpg" 
+                  alt="Rajesh Kumar - Project Manager"
+                  class="team-member__img"
+                  loading="lazy"
+                  onerror="this.src='assets/images/general/placeholder-team.svg'"
+                />
+              </div>
+              <div class="team-member__content">
+                <h3 class="team-member__name">Rajesh Kumar</h3>
+                <p class="team-member__role">Project Manager & Architect</p>
+                <p class="team-member__description">
+                  Rajesh ensures seamless project execution from concept to completion, 
+                  coordinating with clients, contractors, and our design team to deliver 
+                  exceptional results on time and within budget.
+                </p>
+                <div class="team-member__credentials">
+                  <span class="credential">B.Arch, SPA Delhi</span>
+                  <span class="credential">PMP Certified</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Member 4 -->
+            <div class="team-member" data-aos="fade-up" data-aos-delay="400">
+              <div class="team-member__image">
+                <img 
+                  src="assets/images/team/designer-2.jpg" 
+                  alt="Priya Mehta - Junior Architect"
+                  class="team-member__img"
+                  loading="lazy"
+                  onerror="this.src='assets/images/general/placeholder-team.svg'"
+                />
+              </div>
+              <div class="team-member__content">
+                <h3 class="team-member__name">Priya Mehta</h3>
+                <p class="team-member__role">Junior Architect</p>
+                <p class="team-member__description">
+                  Priya brings fresh perspectives and innovative ideas to our team, 
+                  specializing in sustainable design solutions and 3D visualization 
+                  that help clients envision their projects.
+                </p>
+                <div class="team-member__credentials">
+                  <span class="credential">B.Arch, CEPT University</span>
+                  <span class="credential">Green Building Specialist</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Design Process Section -->
+      <section class="about-process" aria-labelledby="process-heading">
+        <div class="container">
+          <h2 id="process-heading" class="section-title text-center" data-aos="fade-up">Our Design Process</h2>
+          <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="100">
+            We follow a comprehensive, collaborative approach that ensures every project 
+            exceeds expectations while staying true to our clients' vision.
+          </p>
+          
+          <div class="process-timeline">
+            <!-- Process Step 1 -->
+            <div class="process-step" data-aos="fade-right" data-aos-delay="100">
+              <div class="process-step__number">01</div>
+              <div class="process-step__content">
+                <h3 class="process-step__title">Discovery & Consultation</h3>
+                <p class="process-step__description">
+                  We begin with in-depth consultations to understand your vision, requirements, 
+                  budget, and timeline. This phase includes site analysis and feasibility studies.
+                </p>
+              </div>
+            </div>
+
+            <!-- Process Step 2 -->
+            <div class="process-step" data-aos="fade-left" data-aos-delay="200">
+              <div class="process-step__number">02</div>
+              <div class="process-step__content">
+                <h3 class="process-step__title">Concept Development</h3>
+                <p class="process-step__description">
+                  Our team develops initial design concepts, exploring various approaches 
+                  and presenting creative solutions that align with your goals and aesthetic preferences.
+                </p>
+              </div>
+            </div>
+
+            <!-- Process Step 3 -->
+            <div class="process-step" data-aos="fade-right" data-aos-delay="300">
+              <div class="process-step__number">03</div>
+              <div class="process-step__content">
+                <h3 class="process-step__title">Design Development</h3>
+                <p class="process-step__description">
+                  We refine the chosen concept, developing detailed drawings, 3D visualizations, 
+                  and material specifications while incorporating your feedback throughout the process.
+                </p>
+              </div>
+            </div>
+
+            <!-- Process Step 4 -->
+            <div class="process-step" data-aos="fade-left" data-aos-delay="400">
+              <div class="process-step__number">04</div>
+              <div class="process-step__content">
+                <h3 class="process-step__title">Documentation & Permits</h3>
+                <p class="process-step__description">
+                  We prepare comprehensive construction documents and assist with permit 
+                  applications, ensuring all designs comply with local building codes and regulations.
+                </p>
+              </div>
+            </div>
+
+            <!-- Process Step 5 -->
+            <div class="process-step" data-aos="fade-right" data-aos-delay="500">
+              <div class="process-step__number">05</div>
+              <div class="process-step__content">
+                <h3 class="process-step__title">Construction Administration</h3>
+                <p class="process-step__description">
+                  Throughout construction, we provide ongoing support, conduct site visits, 
+                  and ensure the project is executed according to our design specifications.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Awards & Recognition Section -->
+      <section class="about-awards" aria-labelledby="awards-heading">
+        <div class="container">
+          <h2 id="awards-heading" class="section-title text-center" data-aos="fade-up">Awards & Recognition</h2>
+          <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="100">
+            Our commitment to design excellence has been recognized by industry leaders 
+            and prestigious architectural organizations.
+          </p>
+          
+          <div class="awards-grid">
+            <!-- Award 1 -->
+            <div class="award-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="award-item__icon">
+                <i class="fas fa-trophy" aria-hidden="true"></i>
+              </div>
+              <h3 class="award-item__title">Best Residential Design</h3>
+              <p class="award-item__organization">Indian Institute of Architects</p>
+              <p class="award-item__year">2023</p>
+              <p class="award-item__description">
+                Recognized for innovative residential design that seamlessly blends 
+                traditional elements with contemporary functionality.
+              </p>
+            </div>
+
+            <!-- Award 2 -->
+            <div class="award-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="award-item__icon">
+                <i class="fas fa-medal" aria-hidden="true"></i>
+              </div>
+              <h3 class="award-item__title">Sustainable Design Excellence</h3>
+              <p class="award-item__organization">Green Building Council</p>
+              <p class="award-item__year">2022</p>
+              <p class="award-item__description">
+                Honored for outstanding commitment to sustainable architecture and 
+                environmental responsibility in commercial projects.
+              </p>
+            </div>
+
+            <!-- Award 3 -->
+            <div class="award-item" data-aos="fade-up" data-aos-delay="300">
+              <div class="award-item__icon">
+                <i class="fas fa-star" aria-hidden="true"></i>
+              </div>
+              <h3 class="award-item__title">Emerging Architecture Firm</h3>
+              <p class="award-item__organization">Architecture Digest India</p>
+              <p class="award-item__year">2021</p>
+              <p class="award-item__description">
+                Featured as one of the most promising emerging architecture firms 
+                for innovative retail space design.
+              </p>
+            </div>
+
+            <!-- Award 4 -->
+            <div class="award-item" data-aos="fade-up" data-aos-delay="400">
+              <div class="award-item__icon">
+                <i class="fas fa-certificate" aria-hidden="true"></i>
+              </div>
+              <h3 class="award-item__title">Design Innovation Award</h3>
+              <p class="award-item__organization">National Design Awards</p>
+              <p class="award-item__year">2020</p>
+              <p class="award-item__description">
+                Recognized for groundbreaking use of space and light in urban 
+                residential projects with limited footprint.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action Section -->
+      <section class="about-cta" aria-labelledby="cta-heading">
+        <div class="container">
+          <div class="about-cta__content" data-aos="fade-up">
+            <h2 id="cta-heading" class="about-cta__title">Ready to Start Your Project?</h2>
+            <p class="about-cta__description">
+              Let's collaborate to bring your architectural vision to life. 
+              Contact us today to discuss your project and discover how we can 
+              create something extraordinary together.
+            </p>
+            <div class="about-cta__buttons">
+              <a href="contact.html" class="btn btn--primary">Get In Touch</a>
+              <a href="portfolio.html" class="btn btn--outline">View Our Work</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Enhanced Footer -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__section footer__section--about">
+            <h3 class="footer__title">The A&S Design Studio</h3>
+            <p class="footer__description">
+              Creating exceptional architectural experiences in retail and residential spaces.
+            </p>
+            <div class="footer__social">
+              <a href="#" class="footer__social-link" aria-label="Follow us on Instagram">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="footer__social-link" aria-label="Follow us on LinkedIn">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="footer__social-link" aria-label="Follow us on Facebook">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="footer__section footer__section--links">
+            <h4 class="footer__subtitle">Quick Links</h4>
+            <ul class="footer__links">
+              <li><a href="index.html" class="footer__link">Home</a></li>
+              <li><a href="about.html" class="footer__link">About</a></li>
+              <li><a href="services.html" class="footer__link">Services</a></li>
+              <li><a href="portfolio.html" class="footer__link">Portfolio</a></li>
+              <li><a href="contact.html" class="footer__link">Contact</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer__section footer__section--contact">
+            <h4 class="footer__subtitle">Contact Info</h4>
+            <div class="footer__contact">
+              <p class="footer__contact-item">
+                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                Gurugram, Haryana, India
+              </p>
+              <p class="footer__contact-item">
+                <i class="fas fa-phone" aria-hidden="true"></i>
+                <a href="tel:+919876543210">+91 98765 43210</a>
+              </p>
+              <p class="footer__contact-item">
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+                <a href="mailto:info@asdesignstudio.com">info@asdesignstudio.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            &copy; 2024 The A&S Design Studio. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      // Initialize AOS (Animate On Scroll)
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        offset: 100
+      });
+    </script>
+  </body>
+</html>
