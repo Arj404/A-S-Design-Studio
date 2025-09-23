@@ -1,3 +1,8 @@
+/* High contrast for service cards */
+.service-card--featured {
+  border: 2px solid var(--secondary-color);
+  background: var(--surface-color);
+}
 /* Pages CSS - Page-specific styles */
 
 /* Breadcrumb Navigation Styles */
@@ -65,7 +70,11 @@ section {
 
 /* Add subtle texture to sections */
 section:nth-child(even) {
-  background: linear-gradient(135deg, rgba(247, 244, 240, 0.5) 0%, transparent 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(247, 244, 240, 0.5) 0%,
+    transparent 100%
+  );
 }
 
 /* Premium section dividers */
@@ -77,7 +86,12 @@ section::before {
   transform: translateX(-50%);
   width: 100px;
   height: 1px;
-  background: linear-gradient(90deg, transparent 0%, var(--border-color) 50%, transparent 100%);
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--border-color) 50%,
+    transparent 100%
+  );
 }
 
 /* Premium Hero Section */
@@ -101,9 +115,16 @@ section::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background:
-    radial-gradient(circle at 20% 80%, rgba(166, 124, 82, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(166, 124, 82, 0.1) 0%, transparent 50%);
+  background: radial-gradient(
+      circle at 20% 80%,
+      rgba(166, 124, 82, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(166, 124, 82, 0.1) 0%,
+      transparent 50%
+    );
   pointer-events: none;
 }
 
@@ -168,7 +189,11 @@ section::before {
   left: 0;
   width: 0;
   height: 100%;
-  background: linear-gradient(135deg, rgba(166, 124, 82, 0.05) 0%, transparent 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(166, 124, 82, 0.05) 0%,
+    transparent 100%
+  );
   transition: width var(--transition-slow);
   z-index: 1;
 }
@@ -428,9 +453,16 @@ section::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background:
-    radial-gradient(circle at 20% 80%, rgba(166, 124, 82, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(166, 124, 82, 0.1) 0%, transparent 50%);
+  background: radial-gradient(
+      circle at 20% 80%,
+      rgba(166, 124, 82, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(166, 124, 82, 0.1) 0%,
+      transparent 50%
+    );
   pointer-events: none;
 }
 
@@ -515,7 +547,11 @@ section::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(166, 124, 82, 0.05) 0%, transparent 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(166, 124, 82, 0.05) 0%,
+    transparent 100%
+  );
   pointer-events: none;
 }
 
@@ -593,7 +629,12 @@ footer::before {
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent 0%, var(--secondary-color) 50%, transparent 100%);
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--secondary-color) 50%,
+    transparent 100%
+  );
 }
 
 .footer-content {
@@ -622,7 +663,11 @@ footer p {
 /* About Hero Section */
 .about-hero {
   padding: calc(var(--spacing-xl) * 2) 0 var(--spacing-xl);
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    var(--primary-light) 100%
+  );
   color: var(--text-white);
   text-align: center;
 }
@@ -722,7 +767,11 @@ footer p {
 .philosophy-card__icon {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, var(--secondary-color), var(--secondary-light));
+  background: linear-gradient(
+    135deg,
+    var(--secondary-color),
+    var(--secondary-light)
+  );
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -845,7 +894,7 @@ footer p {
 }
 
 .process-timeline::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   top: 0;
@@ -942,13 +991,17 @@ footer p {
 }
 
 .award-item::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--secondary-color), var(--secondary-light));
+  background: linear-gradient(
+    90deg,
+    var(--secondary-color),
+    var(--secondary-light)
+  );
 }
 
 .award-item:hover {
@@ -959,7 +1012,11 @@ footer p {
 .award-item__icon {
   width: 70px;
   height: 70px;
-  background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--primary-light)
+  );
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1000,7 +1057,11 @@ footer p {
 /* About CTA Section */
 .about-cta {
   padding: calc(var(--spacing-xl) * 2) 0;
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    var(--primary-light) 100%
+  );
   color: var(--text-white);
   text-align: center;
 }
@@ -1042,60 +1103,60 @@ footer p {
   .about-hero__title {
     font-size: var(--font-size-xl);
   }
-  
+
   .about-hero__subtitle {
     font-size: var(--font-size-md);
   }
-  
+
   .about-story__content {
     grid-template-columns: 1fr;
     gap: var(--spacing-xl);
   }
-  
+
   .about-story__text {
     padding-right: 0;
   }
-  
+
   .philosophy-grid {
     grid-template-columns: 1fr;
     gap: var(--spacing-lg);
   }
-  
+
   .team-grid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: var(--spacing-lg);
   }
-  
+
   .process-timeline::before {
     left: 30px;
   }
-  
+
   .process-step {
     flex-direction: row !important;
     padding-left: 80px;
   }
-  
+
   .process-step__number {
     position: absolute;
     left: 0;
     margin: 0;
   }
-  
+
   .process-step__content {
     text-align: left !important;
     padding: var(--spacing-md) !important;
   }
-  
+
   .awards-grid {
     grid-template-columns: 1fr;
     gap: var(--spacing-lg);
   }
-  
+
   .about-cta__buttons {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .about-cta__buttons .btn {
     width: 100%;
     max-width: 300px;
@@ -1106,7 +1167,7 @@ footer p {
   .about-hero {
     padding: var(--spacing-xl) 0;
   }
-  
+
   .about-story,
   .about-philosophy,
   .about-team,
@@ -1115,13 +1176,13 @@ footer p {
   .about-cta {
     padding: var(--spacing-xl) 0;
   }
-  
+
   .philosophy-card,
   .team-member__content,
   .award-item {
     padding: var(--spacing-md);
   }
-  
+
   .team-member__image {
     height: 220px;
   }
@@ -1134,7 +1195,11 @@ footer p {
 /* Services Hero Section */
 .services-hero {
   padding: calc(var(--spacing-xl) * 2) 0 var(--spacing-xl);
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    var(--primary-light) 100%
+  );
   color: var(--text-white);
   text-align: center;
   margin-top: 80px; /* Account for fixed header */
@@ -1187,13 +1252,17 @@ footer p {
 }
 
 .service-card--featured::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--secondary-color), var(--secondary-light));
+  background: linear-gradient(
+    90deg,
+    var(--secondary-color),
+    var(--secondary-light)
+  );
   transform: scaleX(0);
   transition: transform var(--transition-normal);
   transform-origin: left;
@@ -1212,7 +1281,11 @@ footer p {
 .service-card--featured .service-card__icon {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, var(--secondary-color), var(--secondary-light));
+  background: linear-gradient(
+    135deg,
+    var(--secondary-color),
+    var(--secondary-light)
+  );
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1287,13 +1360,17 @@ footer p {
 }
 
 .process-workflow::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 50px;
   top: 0;
   bottom: 0;
   width: 2px;
-  background: linear-gradient(180deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+  background: linear-gradient(
+    180deg,
+    var(--secondary-color) 0%,
+    var(--primary-color) 100%
+  );
   z-index: 1;
 }
 
@@ -1319,7 +1396,11 @@ footer p {
 .process-step__number {
   width: 100px;
   height: 100px;
-  background: linear-gradient(135deg, var(--secondary-color), var(--secondary-light));
+  background: linear-gradient(
+    135deg,
+    var(--secondary-color),
+    var(--secondary-light)
+  );
   color: var(--text-white);
   border-radius: 50%;
   display: flex;
@@ -1419,13 +1500,17 @@ footer p {
 }
 
 .benefit-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
   transform: scaleX(0);
   transition: transform var(--transition-normal);
   transform-origin: left;
@@ -1443,7 +1528,11 @@ footer p {
 .benefit-card__icon {
   width: 70px;
   height: 70px;
-  background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--primary-light)
+  );
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1475,7 +1564,11 @@ footer p {
 /* Services CTA Section */
 .services-cta {
   padding: calc(var(--spacing-xl) * 2) 0;
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    var(--primary-light) 100%
+  );
   color: var(--text-white);
   text-align: center;
 }
@@ -1577,18 +1670,18 @@ footer p {
     margin: var(--spacing-sm);
     max-width: calc(100vw - var(--spacing-md));
   }
-  
+
   .modal__header,
   .modal__body,
   .modal__footer {
     padding: var(--spacing-md);
   }
-  
+
   .services-cta__buttons {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .services-cta__buttons .btn {
     width: 100%;
     max-width: 300px;
@@ -1601,16 +1694,16 @@ footer p {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: var(--spacing-lg);
   }
-  
+
   .benefits-grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: var(--spacing-lg);
   }
-  
+
   .process-workflow::before {
     left: 30px;
   }
-  
+
   .process-step__number {
     width: 60px;
     height: 60px;
@@ -1623,35 +1716,35 @@ footer p {
   .services-hero__title {
     font-size: var(--font-size-xl);
   }
-  
+
   .services-hero__subtitle {
     font-size: var(--font-size-md);
   }
-  
+
   .services-grid {
     grid-template-columns: 1fr;
     gap: var(--spacing-lg);
   }
-  
+
   .service-card--featured {
     padding: var(--spacing-lg);
   }
-  
+
   .benefits-grid {
     grid-template-columns: 1fr;
     gap: var(--spacing-lg);
   }
-  
+
   .process-step {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .process-step__number {
     margin-right: 0;
     margin-bottom: var(--spacing-md);
   }
-  
+
   .process-workflow::before {
     display: none;
   }
@@ -1661,23 +1754,23 @@ footer p {
   .services-hero {
     padding: var(--spacing-xl) 0;
   }
-  
+
   .services-overview,
   .design-process,
   .why-choose-us,
   .services-cta {
     padding: var(--spacing-xl) 0;
   }
-  
+
   .service-card--featured,
   .benefit-card {
     padding: var(--spacing-md);
   }
-  
+
   .process-step__content {
     padding: var(--spacing-md);
   }
-  
+
   .process-step__number {
     width: 50px;
     height: 50px;
