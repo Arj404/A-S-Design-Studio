@@ -1,12 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage -->
   <url>
-    <loc>https://theasdesignstudio.com/index.html</loc>
+    <loc>https://asdesignstudio.com/</loc>
+    <lastmod>2025-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://asdesignstudio.com/assets/images/projects/ChinarOct2025/IMG_1873.webp</image:loc>
+      <image:title>Chinar Factory Outlet - Featured Project</image:title>
+      <image:caption>Modern retail design by The A&S Design Studio</image:caption>
+    </image:image>
   </url>
+  
+  <!-- Chinar Factory Outlet Project -->
   <url>
-    <loc>https://theasdesignstudio.com/about.html</loc>
+    <loc>https://asdesignstudio.com/chinar-factory-outlet.html</loc>
+    <lastmod>2025-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://asdesignstudio.com/assets/images/projects/ChinarOct2025/IMG_1873.webp</image:loc>
+      <image:title>Chinar Factory Outlet</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://asdesignstudio.com/assets/images/projects/ChinarOct2025/IMG_1874.webp</image:loc>
+      <image:title>Chinar Factory Outlet Interior</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://asdesignstudio.com/assets/images/projects/ChinarOct2025/IMG_1876.webp</image:loc>
+      <image:title>Chinar Factory Outlet Display</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://asdesignstudio.com/assets/images/projects/ChinarOct2025/IMG_1877.webp</image:loc>
+      <image:title>Chinar Factory Outlet Layout</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://asdesignstudio.com/assets/images/projects/ChinarOct2025/IMG_1878.webp</image:loc>
+      <image:title>Chinar Factory Outlet Merchandise</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://asdesignstudio.com/assets/images/projects/ChinarOct2025/IMG_1879.webp</image:loc>
+      <image:title>Chinar Factory Outlet Interior View</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://asdesignstudio.com/assets/images/projects/ChinarOct2025/IMG_1881.webp</image:loc>
+      <image:title>Chinar Factory Outlet Retail Space</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://asdesignstudio.com/assets/images/projects/ChinarOct2025/IMG_1883.webp</image:loc>
+      <image:title>Chinar Factory Outlet Design Detail</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://asdesignstudio.com/assets/images/projects/ChinarOct2025/IMG_1887.webp</image:loc>
+      <image:title>Chinar Factory Outlet Store Front</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://asdesignstudio.com/assets/images/projects/ChinarOct2025/IMG_1890.webp</image:loc>
+      <image:title>Chinar Factory Outlet Shopping Area</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://asdesignstudio.com/assets/images/projects/ChinarOct2025/IMG_1895.webp</image:loc>
+      <image:title>Chinar Factory Outlet Architecture</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://asdesignstudio.com/assets/images/projects/ChinarOct2025/IMG_1898.webp</image:loc>
+      <image:title>Chinar Factory Outlet Final View</image:title>
+    </image:image>
   </url>
-  <url>
-    <loc>https://theasdesignstudio.com/services.html</loc>
-  </url>
+  
 </urlset>

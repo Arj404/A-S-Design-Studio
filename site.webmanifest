@@ -1,0 +1,27 @@
+{
+  "name": "The A&S Design Studio",
+  "short_name": "A&S Design",
+  "description": "Award-winning architecture firm in Gurugram specializing in retail, residential, and commercial design",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/assets/images/general/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/general/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["architecture", "design", "business"],
+  "lang": "en-IN",
+  "dir": "ltr"
+}

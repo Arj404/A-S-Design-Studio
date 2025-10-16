@@ -1,0 +1,76 @@
+# .htaccess for The A&S Design Studio
+
+# Enable Rewrite Engine
+RewriteEngine On
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Force WWW (or non-WWW - choose one)
+# RewriteCond %{HTTP_HOST} !^www\. [NC]
+# RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Remove trailing slashes
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} (.+)/$
+RewriteRule ^ %1 [R=301,L]
+
+# Enable Compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# Browser Caching
+<IfModule mod_expires.c>
+  ExpiresActive On
+  
+  # Images
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  
+  # CSS and JavaScript
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  
+  # Fonts
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+  
+  # HTML
+  ExpiresByType text/html "access plus 1 hour"
+</IfModule>
+
+# Security Headers
+<IfModule mod_headers.c>
+  # X-Frame-Options
+  Header always set X-Frame-Options "SAMEORIGIN"
+  
+  # X-Content-Type-Options
+  Header always set X-Content-Type-Options "nosniff"
+  
+  # X-XSS-Protection
+  Header always set X-XSS-Protection "1; mode=block"
+  
+  # Referrer Policy
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  
+  # Permissions Policy
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+# Prevent Directory Browsing
+Options -Indexes
+
+# Custom Error Pages
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
+
+# Protect sensitive files
+<FilesMatch "^\.">
+  Order allow,deny
+  Deny from all
+</FilesMatch>

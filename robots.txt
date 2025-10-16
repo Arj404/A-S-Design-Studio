@@ -1,3 +1,20 @@
+# robots.txt for The A&S Design Studio
+
 User-agent: *
 Allow: /
+
+# Sitemaps
 Sitemap: https://asdesignstudio.com/sitemap.xml
+
+# Disallow admin and private directories (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+
+# Allow CSS and JS
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/images/
+
+# Crawl-delay (optional, adjust as needed)
+Crawl-delay: 1
