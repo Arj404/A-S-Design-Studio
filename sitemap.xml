@@ -115,4 +115,83 @@
     </image:image>
   </url>
   
+  <!-- Blog Page -->
+  <url>
+    <loc>https://asdesignstudio.com/blog.html</loc>
+    <lastmod>2024-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://asdesignstudio.com/blog/luxury-villa-design-gurugram.html</loc>
+    <lastmod>2024-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://asdesignstudio.com/blog/retail-store-design-trends.html</loc>
+    <lastmod>2024-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://asdesignstudio.com/blog/sustainable-architecture-luxury-homes.html</loc>
+    <lastmod>2024-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://asdesignstudio.com/blog/choosing-architect-gurugram.html</loc>
+    <lastmod>2024-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://asdesignstudio.com/blog/modern-interior-design-trends.html</loc>
+    <lastmod>2024-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://asdesignstudio.com/blog/maximizing-space-luxury-apartments.html</loc>
+    <lastmod>2024-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://asdesignstudio.com/blog/lighting-design-luxury-spaces.html</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://asdesignstudio.com/blog/commercial-architecture-roi.html</loc>
+    <lastmod>2024-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://asdesignstudio.com/blog/luxury-home-materials-finishes.html</loc>
+    <lastmod>2024-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://asdesignstudio.com/blog/vastu-modern-architecture.html</loc>
+    <lastmod>2024-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
 </urlset>
