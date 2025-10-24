@@ -59,6 +59,26 @@
     </image:image>
   </url>
   
+  <!-- Kapkids CP67 Project -->
+  <url>
+    <loc>https://theasdesignstudio.com/kapkids-cp67.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://theasdesignstudio.com/assets/images/projects/cp67jan2024/21440aeb.jpg</image:loc>
+      <image:title>Kapkids CP67 Chandigarh</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://theasdesignstudio.com/assets/images/projects/cp67jan2024/87658c41.jpg</image:loc>
+      <image:title>Kapkids CP67 Display Area</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://theasdesignstudio.com/assets/images/projects/cp67jan2024/a41105df.jpg</image:loc>
+      <image:title>Kapkids CP67 Store Layout</image:title>
+    </image:image>
+  </url>
+  
   <!-- Chinar Factory Outlet Project -->
   <url>
     <loc>https://theasdesignstudio.com/chinar-factory-outlet.html</loc>
