@@ -145,25 +145,7 @@ function initScrollAnimations() {
     });
 }
 
-// Form Handling
-const contactForm = document.querySelector('.contact__form');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Get form data
-        const formData = new FormData(this);
-        const data = Object.fromEntries(formData);
-        
-        console.log('Form submitted:', data);
-        
-        // Show success message (you can customize this)
-        alert('Thank you for your message! We will get back to you soon.');
-        
-        // Reset form
-        this.reset();
-    });
-}
+// Form Handling - Removed (handled in index.html)
 
 // Add fadeInUp animation
 const style = document.createElement('style');
