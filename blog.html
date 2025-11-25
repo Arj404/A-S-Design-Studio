@@ -58,7 +58,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -106,9 +106,19 @@
     <!-- Blog Hero -->
     <section class="blog-hero">
       <div class="blog-hero__content">
-        <span class="blog-hero__label">Insights & Inspiration</span>
-        <h1 class="blog-hero__title">Architecture & Design Blog</h1>
-        <p class="blog-hero__subtitle">
+        <!-- Language Switcher -->
+        <div class="lang-switcher">
+          <span class="lang-switcher__label">English</span>
+          <label class="lang-toggle">
+            <input type="checkbox" id="langToggle" />
+            <span class="lang-toggle__slider"></span>
+          </label>
+          <span class="lang-switcher__label">हिंदी</span>
+        </div>
+        
+        <span class="blog-hero__label" data-label="insightsLabel">Insights & Inspiration</span>
+        <h1 class="blog-hero__title" data-label="blogTitle">Architecture & Design Blog</h1>
+        <p class="blog-hero__subtitle" data-label="blogSubtitle">
           Expert insights on luxury architecture, interior design, and creating
           exceptional spaces in Gurugram and beyond.
         </p>
@@ -119,319 +129,119 @@
     <section class="blog-section">
       <div class="blog-container">
         <div class="blog-grid">
-          <!-- Blog Post 1 -->
+          <!-- Blog Post 1: Budget Planning Construction Shock -->
           <article class="blog-card">
-            <a
-              href="blog/luxury-villa-design-gurugram.html"
-              class="blog-card__link"
-            >
-              <div class="blog-card__image">
-                <img
-                  src="assets/images/projects/ChinarOct2025/IMG_1881.webp"
-                  alt="Luxury Villa Design in Gurugram"
-                  loading="lazy"
-                />
-              </div>
-              <div class="blog-card__content">
-                <span class="blog-card__category">Residential Design</span>
-                <h2 class="blog-card__title">
-                  10 Essential Elements of Luxury Villa Design in Gurugram
-                </h2>
-                <p class="blog-card__excerpt">
-                  Discover the key architectural elements that define luxury
-                  living in Gurugram's most prestigious neighborhoods.
-                </p>
-                <div class="blog-card__meta">
-                  <span class="blog-card__date">October 15, 2024</span>
-                  <span class="blog-card__read-time">5 min read</span>
-                </div>
-              </div>
-            </a>
-          </article>
-
-          <!-- Blog Post 2 -->
-          <article class="blog-card">
-            <a
-              href="blog/retail-store-design-trends.html"
-              class="blog-card__link"
-            >
-              <div class="blog-card__image">
-                <img
-                  src="assets/images/projects/ChinarOct2025/IMG_1873.webp"
-                  alt="Retail Store Design Trends"
-                  loading="lazy"
-                />
-              </div>
-              <div class="blog-card__content">
-                <span class="blog-card__category">Retail Design</span>
-                <h2 class="blog-card__title">
-                  2024 Retail Store Design Trends That Drive Sales
-                </h2>
-                <p class="blog-card__excerpt">
-                  Explore the latest retail design innovations that create
-                  memorable shopping experiences and boost revenue.
-                </p>
-                <div class="blog-card__meta">
-                  <span class="blog-card__date">October 12, 2024</span>
-                  <span class="blog-card__read-time">6 min read</span>
-                </div>
-              </div>
-            </a>
-          </article>
-
-          <!-- Blog Post 3 -->
-          <article class="blog-card">
-            <a
-              href="blog/sustainable-architecture-luxury-homes.html"
-              class="blog-card__link"
-            >
-              <div class="blog-card__image">
-                <img
-                  src="assets/images/projects/KapsonsSolanOct2023/IMG-20251016-WA0012.webp"
-                  alt="Sustainable Luxury Architecture"
-                  loading="lazy"
-                />
-              </div>
-              <div class="blog-card__content">
-                <span class="blog-card__category">Sustainability</span>
-                <h2 class="blog-card__title">
-                  Sustainable Architecture for Luxury Homes: A Complete Guide
-                </h2>
-                <p class="blog-card__excerpt">
-                  Learn how to incorporate eco-friendly design without
-                  compromising on luxury and sophistication.
-                </p>
-                <div class="blog-card__meta">
-                  <span class="blog-card__date">October 10, 2024</span>
-                  <span class="blog-card__read-time">7 min read</span>
-                </div>
-              </div>
-            </a>
-          </article>
-
-          <!-- Blog Post 4 -->
-          <article class="blog-card">
-            <a
-              href="blog/choosing-architect-gurugram.html"
-              class="blog-card__link"
-            >
-              <div class="blog-card__image">
-                <img
-                  src="assets/images/projects/ChinarOct2025/IMG_1877.webp"
-                  alt="Choosing an Architect in Gurugram"
-                  loading="lazy"
-                />
-              </div>
-              <div class="blog-card__content">
-                <span class="blog-card__category">Guide</span>
-                <h2 class="blog-card__title">
-                  How to Choose the Right Architect for Your Gurugram Project
-                </h2>
-                <p class="blog-card__excerpt">
-                  Essential tips for selecting an architect who understands
-                  luxury design and local regulations.
-                </p>
-                <div class="blog-card__meta">
-                  <span class="blog-card__date">October 8, 2024</span>
-                  <span class="blog-card__read-time">8 min read</span>
-                </div>
-              </div>
-            </a>
-          </article>
-
-          <!-- Blog Post 5 -->
-          <article class="blog-card">
-            <a
-              href="blog/modern-interior-design-trends.html"
-              class="blog-card__link"
-            >
-              <div class="blog-card__image">
-                <img
-                  src="assets/images/projects/KapsonsSolanOct2023/IMG-20251016-WA0016.webp"
-                  alt="Modern Interior Design Trends"
-                  loading="lazy"
-                />
-              </div>
-              <div class="blog-card__content">
-                <span class="blog-card__category">Interior Design</span>
-                <h2 class="blog-card__title">
-                  Modern Interior Design Trends for Luxury Homes in 2024
-                </h2>
-                <p class="blog-card__excerpt">
-                  Stay ahead with the latest interior design trends that define
-                  contemporary luxury living.
-                </p>
-                <div class="blog-card__meta">
-                  <span class="blog-card__date">October 5, 2024</span>
-                  <span class="blog-card__read-time">6 min read</span>
-                </div>
-              </div>
-            </a>
-          </article>
-
-          <!-- Blog Post 6 -->
-          <article class="blog-card">
-            <a
-              href="blog/maximizing-space-luxury-apartments.html"
-              class="blog-card__link"
-            >
-              <div class="blog-card__image">
-                <img
-                  src="assets/images/projects/ChinarOct2025/IMG_1883.webp"
-                  alt="Luxury Apartment Design"
-                  loading="lazy"
-                />
-              </div>
-              <div class="blog-card__content">
-                <span class="blog-card__category">Residential Design</span>
-                <h2 class="blog-card__title">
-                  Maximizing Space in Luxury Apartments: Design Strategies
-                </h2>
-                <p class="blog-card__excerpt">
-                  Smart design solutions that make luxury apartments feel
-                  spacious and sophisticated.
-                </p>
-                <div class="blog-card__meta">
-                  <span class="blog-card__date">October 3, 2024</span>
-                  <span class="blog-card__read-time">5 min read</span>
-                </div>
-              </div>
-            </a>
-          </article>
-
-          <!-- Blog Post 7 -->
-          <article class="blog-card">
-            <a
-              href="blog/lighting-design-luxury-spaces.html"
-              class="blog-card__link"
-            >
-              <div class="blog-card__image">
-                <img
-                  src="assets/images/projects/KapsonsSolanOct2023/IMG-20251016-WA0018.webp"
-                  alt="Lighting Design for Luxury Spaces"
-                  loading="lazy"
-                />
-              </div>
-              <div class="blog-card__content">
-                <span class="blog-card__category">Design Tips</span>
-                <h2 class="blog-card__title">
-                  The Art of Lighting Design in Luxury Spaces
-                </h2>
-                <p class="blog-card__excerpt">
-                  Master the principles of lighting design to create ambiance
-                  and highlight architectural features.
-                </p>
-                <div class="blog-card__meta">
-                  <span class="blog-card__date">October 1, 2024</span>
-                  <span class="blog-card__read-time">7 min read</span>
-                </div>
-              </div>
-            </a>
-          </article>
-
-          <!-- Blog Post 8 -->
-          <article class="blog-card">
-            <a
-              href="blog/commercial-architecture-roi.html"
-              class="blog-card__link"
-            >
+            <a href="blog/budget-planning-construction-shock.html" class="blog-card__link">
               <div class="blog-card__image">
                 <img
                   src="assets/images/projects/ChinarOct2025/IMG_1890.webp"
-                  alt="Commercial Architecture ROI"
+                  alt="Budget Planning in Construction"
                   loading="lazy"
                 />
               </div>
               <div class="blog-card__content">
-                <span class="blog-card__category">Commercial Design</span>
-                <h2 class="blog-card__title">
-                  How Good Architecture Increases Commercial Property ROI
+                <span class="blog-card__category" data-lang="en">Budget & Planning</span>
+                <span class="blog-card__category" data-lang="hi" style="display:none">बजट और योजना</span>
+                <h2 class="blog-card__title" data-lang="en">
+                  Budget Planning in Construction: How to Protect Yourself from the Shock
                 </h2>
-                <p class="blog-card__excerpt">
-                  Discover how strategic architectural design can significantly
-                  boost your commercial property value.
+                <h2 class="blog-card__title" data-lang="hi" style="display:none">
+                  निर्माण में बजट योजना: झटके से खुद को कैसे बचाएं
+                </h2>
+                <p class="blog-card__excerpt" data-lang="en">
+                  Learn how to protect yourself from unexpected budget increases in construction. Honest advice on budget planning and avoiding financial shock.
+                </p>
+                <p class="blog-card__excerpt" data-lang="hi" style="display:none">
+                  निर्माण में अप्रत्याशित बजट वृद्धि से खुद को कैसे बचाएं। बजट योजना और वित्तीय झटके से बचने पर ईमानदार सलाह।
                 </p>
                 <div class="blog-card__meta">
-                  <span class="blog-card__date">September 28, 2024</span>
-                  <span class="blog-card__read-time">6 min read</span>
+                  <span class="blog-card__date">November 2024</span>
+                  <span class="blog-card__read-time">9 <span data-label="readTime">min read</span></span>
                 </div>
               </div>
             </a>
           </article>
 
-          <!-- Blog Post 9 -->
+          <!-- Blog Post 2: Do You Need an Architect -->
           <article class="blog-card">
-            <a
-              href="blog/luxury-home-materials-finishes.html"
-              class="blog-card__link"
-            >
+            <a href="blog/do-you-need-architect-or-contractor.html" class="blog-card__link">
               <div class="blog-card__image">
                 <img
-                  src="assets/images/projects/KapsonsSolanOct2023/IMG-20251016-WA0021.webp"
-                  alt="Luxury Home Materials"
+                  src="assets/images/projects/ChinarOct2025/IMG_1877.webp"
+                  alt="Do You Really Need an Architect"
                   loading="lazy"
                 />
               </div>
               <div class="blog-card__content">
-                <span class="blog-card__category">Materials & Finishes</span>
-                <h2 class="blog-card__title">
-                  Premium Materials and Finishes for Luxury Homes
+                <span class="blog-card__category" data-lang="en">Professional Insights</span>
+                <span class="blog-card__category" data-lang="hi" style="display:none">पेशेवर अंतर्दृष्टि</span>
+                <h2 class="blog-card__title" data-lang="en">
+                  Do You Really Need an Architect? Can't a Contractor Just Do It?
                 </h2>
-                <p class="blog-card__excerpt">
-                  A comprehensive guide to selecting high-end materials that
-                  define luxury architecture.
+                <h2 class="blog-card__title" data-lang="hi" style="display:none">
+                  क्या आपको वास्तव में एक आर्किटेक्ट की आवश्यकता है? क्या एक ठेकेदार यह नहीं कर सकता?
+                </h2>
+                <p class="blog-card__excerpt" data-lang="en">
+                  A human, honest, no-fluff viewpoint on why architects matter. Learn the real difference between contractors and architects in construction.
+                </p>
+                <p class="blog-card__excerpt" data-lang="hi" style="display:none">
+                  आर्किटेक्ट क्यों महत्वपूर्ण हैं, इस पर एक मानवीय, ईमानदार दृष्टिकोण। निर्माण में ठेकेदारों और आर्किटेक्ट के बीच वास्तविक अंतर जानें।
                 </p>
                 <div class="blog-card__meta">
-                  <span class="blog-card__date">September 25, 2024</span>
-                  <span class="blog-card__read-time">8 min read</span>
+                  <span class="blog-card__date">November 2024</span>
+                  <span class="blog-card__read-time">7 <span data-label="readTime">min read</span></span>
                 </div>
               </div>
             </a>
           </article>
 
-          <!-- Blog Post 10 -->
+          <!-- Blog Post 2: Can Architect Design Within Budget -->
           <article class="blog-card">
-            <a
-              href="blog/vastu-modern-architecture.html"
-              class="blog-card__link"
-            >
+            <a href="blog/can-architect-design-within-budget.html" class="blog-card__link">
               <div class="blog-card__image">
                 <img
-                  src="assets/images/projects/ChinarOct2025/IMG_1895.webp"
-                  alt="Vastu and Modern Architecture"
+                  src="assets/images/projects/ChinarOct2025/IMG_1873.webp"
+                  alt="Can an Architect Design Within Your Budget"
                   loading="lazy"
                 />
               </div>
               <div class="blog-card__content">
-                <span class="blog-card__category"
-                  >Traditional Meets Modern</span
-                >
-                <h2 class="blog-card__title">
-                  Integrating Vastu Principles with Modern Architecture
+                <span class="blog-card__category" data-lang="en">Budget & Planning</span>
+                <span class="blog-card__category" data-lang="hi" style="display:none">बजट और योजना</span>
+                <h2 class="blog-card__title" data-lang="en">
+                  Can an Architect Design Within Your Budget?
                 </h2>
-                <p class="blog-card__excerpt">
-                  Balance ancient wisdom with contemporary design for harmonious
-                  luxury living spaces.
+                <h2 class="blog-card__title" data-lang="hi" style="display:none">
+                  क्या एक आर्किटेक्ट आपके बजट में डिज़ाइन कर सकता है?
+                </h2>
+                <p class="blog-card__excerpt" data-lang="en">
+                  Learn how architects can design within your budget. Tips on cost management, smart choices, and working with architects for budget-friendly construction.
+                </p>
+                <p class="blog-card__excerpt" data-lang="hi" style="display:none">
+                  जानें कि आर्किटेक्ट आपके बजट में कैसे डिज़ाइन कर सकते हैं। लागत प्रबंधन, स्मार्ट विकल्प और बजट-अनुकूल निर्माण के लिए आर्किटेक्ट के साथ काम करने के टिप्स।
                 </p>
                 <div class="blog-card__meta">
-                  <span class="blog-card__date">September 22, 2024</span>
-                  <span class="blog-card__read-time">7 min read</span>
+                  <span class="blog-card__date">November 2024</span>
+                  <span class="blog-card__read-time">8 <span data-label="readTime">min read</span></span>
                 </div>
               </div>
             </a>
           </article>
+
+
         </div>
       </div>
     </section>
 
+
     <!-- CTA Section -->
     <section class="blog-cta">
       <div class="blog-cta__container">
-        <h2>Ready to Start Your Dream Project?</h2>
-        <p>Let's discuss how we can bring your architectural vision to life</p>
-        <a href="index.html#contact" class="btn-primary"
-          >Schedule a Consultation</a
-        >
+        <h2 data-lang="en">Ready to Start Your Dream Project?</h2>
+        <h2 data-lang="hi" style="display:none">अपने सपनों का प्रोजेक्ट शुरू करने के लिए तैयार हैं?</h2>
+        <p data-lang="en">Let's discuss how we can bring your architectural vision to life</p>
+        <p data-lang="hi" style="display:none">आइए चर्चा करें कि हम आपके वास्तुशिल्प दृष्टिकोण को कैसे साकार कर सकते हैं</p>
+        <a href="index.html#contact" class="btn-primary" data-label="scheduleConsultation">Schedule a Consultation</a>
       </div>
     </section>
 
@@ -479,6 +289,7 @@
 
     <!-- Scripts -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/blog.js"></script>
 
     <style>
       /* Blog Page Styles */
@@ -512,6 +323,90 @@
         max-width: 700px;
         margin: 0 auto;
         line-height: 1.7;
+      }
+
+      /* Language Switcher */
+      .lang-switcher {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: var(--space-lg);
+      }
+
+      .lang-switcher__label {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: var(--gray-600);
+        transition: color 0.3s ease;
+      }
+
+      .lang-switcher__label:first-child {
+        color: var(--black);
+      }
+
+      /* Toggle Switch */
+      .lang-toggle {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 30px;
+      }
+
+      .lang-toggle input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      .lang-toggle__slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--black);
+        transition: 0.4s;
+        border-radius: 30px;
+      }
+
+      .lang-toggle__slider:before {
+        position: absolute;
+        content: "";
+        height: 22px;
+        width: 22px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        transition: 0.4s;
+        border-radius: 50%;
+      }
+
+      .lang-toggle input:checked + .lang-toggle__slider {
+        background-color: var(--black);
+      }
+
+      .lang-toggle input:checked + .lang-toggle__slider:before {
+        transform: translateX(30px);
+      }
+
+      .lang-toggle__slider:hover {
+        background-color: var(--gray-800);
+      }
+
+      /* Update label colors based on toggle state */
+      .lang-switcher.hindi-active .lang-switcher__label:first-child {
+        color: var(--gray-600);
+      }
+
+      .lang-switcher.hindi-active .lang-switcher__label:last-child {
+        color: var(--black);
+      }
+
+      /* Hindi font styling */
+      [data-lang="hi"] {
+        font-family: 'Noto Sans Devanagari', 'Inter', sans-serif;
       }
 
       .blog-section {
@@ -656,6 +551,10 @@
 
         .blog-cta {
           padding: var(--space-xl) var(--space-md);
+        }
+
+        .lang-switcher {
+          margin-bottom: var(--space-md);
         }
       }
     </style>
