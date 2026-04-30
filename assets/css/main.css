@@ -16,6 +16,8 @@
   --gray-900: #1c1c1e;
   --accent: #000000;
   --accent-hover: #1c1c1e;
+  --accent-warm: #c9a96e;
+  --accent-warm-hover: #b8913d;
   
   /* Spacing */
   --space-xs: 0.5rem;
@@ -478,7 +480,7 @@ textarea:focus-visible {
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--gray-500);
+  color: var(--accent-warm);
   margin-bottom: var(--space-md);
 }
 
@@ -582,7 +584,7 @@ textarea:focus-visible {
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--gray-500);
+  color: var(--accent-warm);
   margin-bottom: var(--space-md);
 }
 
@@ -608,6 +610,7 @@ textarea:focus-visible {
   box-shadow: var(--shadow-sm);
   transition: var(--transition);
   border: 1px solid rgba(0, 0, 0, 0.06);
+  overflow: hidden;
 }
 
 .service:hover {
@@ -678,7 +681,8 @@ textarea:focus-visible {
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  opacity: 0.6;
+  color: var(--accent-warm);
+  opacity: 1;
   margin-bottom: var(--space-md);
 }
 
@@ -1065,4 +1069,163 @@ textarea:focus-visible {
   .footer {
     padding: var(--space-xl) var(--space-md) var(--space-md);
   }
+}
+
+/* ==========================================================================
+   Process Section (Step 7)
+   ========================================================================== */
+.process {
+  padding: var(--space-xl) 0;
+  background: var(--gray-100);
+}
+
+.process__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.process__label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-warm);
+  margin-bottom: var(--space-xs);
+}
+
+.process__title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  color: var(--gray-900);
+  margin-bottom: var(--space-lg);
+}
+
+.process__steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-md);
+}
+
+.process__step {
+  padding: var(--space-md);
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  transition: var(--transition);
+}
+
+.process__step:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+.process__step-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--gray-200);
+  margin-bottom: var(--space-xs);
+}
+
+.process__step-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--gray-900);
+  margin-bottom: var(--space-xs);
+}
+
+.process__step-desc {
+  font-size: 0.875rem;
+  color: var(--gray-500);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .process__steps {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   Service Images (Step 9)
+   ========================================================================== */
+.service__image {
+  width: calc(100% + 2 * var(--space-lg));
+  height: 200px;
+  overflow: hidden;
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  margin: calc(-1 * var(--space-lg)) calc(-1 * var(--space-lg)) var(--space-md);
+}
+
+.service__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.service:hover .service__image img {
+  transform: scale(1.04);
+}
+
+/* ==========================================================================
+   Testimonial Project Images (Step 8)
+   ========================================================================== */
+.testimonials__project-img {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-sm);
+}
+
+.testimonials__project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================================================================
+   Founder Profile (Step 12)
+   ========================================================================== */
+.about__founder {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+  padding: var(--space-sm);
+  background: var(--gray-100);
+  border-radius: var(--radius-md);
+}
+
+.about__founder-photo {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.about__founder-info strong {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--gray-900);
+}
+
+.about__founder-info span {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--gray-500);
+}
+
+.about__founder-info p {
+  font-size: 0.75rem;
+  color: var(--gray-600);
+  margin-top: 2px;
 }

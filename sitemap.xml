@@ -201,4 +201,60 @@
     <priority>0.8</priority>
   </url>
   
+  <!-- Kapoor Residence Model Town Project -->
+  <url>
+    <loc>https://theasdesignstudio.com/kapoor-residence-model-town.html</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://theasdesignstudio.com/assets/images/projects/KapoorResidenceModelTownjan2020/1.jpg</image:loc>
+      <image:title>Kapoor Residence - Living Room</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://theasdesignstudio.com/assets/images/projects/KapoorResidenceModelTownjan2020/2.jpg</image:loc>
+      <image:title>Kapoor Residence - Living and Dining Area</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://theasdesignstudio.com/assets/images/projects/KapoorResidenceModelTownjan2020/3.jpg</image:loc>
+      <image:title>Kapoor Residence - Staircase</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://theasdesignstudio.com/assets/images/projects/KapoorResidenceModelTownjan2020/4.jpg</image:loc>
+      <image:title>Kapoor Residence - Dining Area</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://theasdesignstudio.com/assets/images/projects/KapoorResidenceModelTownjan2020/5.jpg</image:loc>
+      <image:title>Kapoor Residence - Lounge Overview</image:title>
+    </image:image>
+  </url>
+
+  <!-- Rohini Residence Project -->
+  <url>
+    <loc>https://theasdesignstudio.com/rohini-residence.html</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://theasdesignstudio.com/assets/images/projects/rohiniapril2021/1.jpg</image:loc>
+      <image:title>Rohini Residence - Main Living Area</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://theasdesignstudio.com/assets/images/projects/rohiniapril2021/2.jpg</image:loc>
+      <image:title>Rohini Residence - Double Height Living Space</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://theasdesignstudio.com/assets/images/projects/rohiniapril2021/3.jpg</image:loc>
+      <image:title>Rohini Residence - Interior Detail</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://theasdesignstudio.com/assets/images/projects/rohiniapril2021/4.jpg</image:loc>
+      <image:title>Rohini Residence - Skylight and Screen Wall</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://theasdesignstudio.com/assets/images/projects/rohiniapril2021/5.jpg</image:loc>
+      <image:title>Rohini Residence - Material and Finish Detail</image:title>
+    </image:image>
+  </url>
+
 </urlset>
