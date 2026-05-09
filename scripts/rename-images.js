@@ -14,13 +14,15 @@ const MAP_FILE = path.join(PROJECT_IMAGES_DIR, 'rename-map.json');
 
 const HTML_FILES = [
   'index.html',
-  'chinar-factory-outlet.html',
-  'kapsons-solan.html',
-  'kapkids-cp67.html',
-  'city-mall-yamunanagar.html',
-  'kapoor-residence-model-town.html',
-  'rohini-residence.html',
   'blog.html',
+  'projects/chinar-factory-outlet.html',
+  'projects/city-mall-yamunanagar.html',
+  'projects/kapkids-cp67.html',
+  'projects/kapoor-residence-model-town.html',
+  'projects/kapsons-solan.html',
+  'projects/rohini-residence.html',
+  'projects/cp-office-cp-delhi.html',
+  'projects/vijay-store-delhi.html',
 ].map(f => path.join(WORKSPACE_ROOT, f));
 
 const IMAGE_EXTS = new Set(['.jpg', '.jpeg', '.webp', '.png', '.gif']);
