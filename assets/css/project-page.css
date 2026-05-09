@@ -164,6 +164,16 @@
   grid-column: span 2;
 }
 
+/* Portrait images: taller container so the full image is shown uncropped */
+.project-gallery__item--portrait {
+  aspect-ratio: 3/4;
+}
+
+/* Portrait-mode grid: 3 uniform columns on desktop, tighter column minimum */
+.project-gallery__grid--portrait {
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
 .project-gallery__item img,
 .project-gallery__item video {
   width: 100%;

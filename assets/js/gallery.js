@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  // Layout cycle: repeats every 6 items (FR-004)
+  // Layout cycle: repeats every 6 items (FR-004) — landscape mode only
   var CYCLE = [
     'project-gallery__item--large', // index mod 6 === 0
     '',                             // index mod 6 === 1  (standard)
@@ -29,18 +29,39 @@
     return map[ext] || 'video/mp4';
   }
 
-  function buildImageItem(folder, filename, projectName, photoNumber, index) {
+  function buildImageItem(folder, filename, projectName, photoNumber, index, layout) {
     var wrapper = document.createElement('div');
     wrapper.className = 'project-gallery__item';
-    var variant = variantClass(index);
-    if (variant) {
-      wrapper.classList.add(variant);
+
+    if (layout === 'portrait') {
+      // Portrait mode: uniform grid, no landscape-specific spanning variants
+      wrapper.classList.add('project-gallery__item--portrait');
+    } else {
+      // Standard landscape mode: apply the repeating layout cycle
+      var variant = variantClass(index);
+      if (variant) {
+        wrapper.classList.add(variant);
+      }
     }
 
     var img = document.createElement('img');
     img.src = folder + filename;
     img.alt = projectName + ' \u2014 Photo ' + photoNumber; // — (em dash)
     img.loading = index === 0 ? 'eager' : 'lazy'; // FR-006
+
+    // Auto-detect portrait images in standard/mixed galleries.
+    // Runs after image loads to avoid layout shift in portrait-mode galleries.
+    if (layout !== 'portrait') {
+      img.addEventListener('load', function () {
+        if (img.naturalHeight > img.naturalWidth) {
+          wrapper.classList.add('project-gallery__item--portrait');
+          wrapper.classList.remove(
+            'project-gallery__item--large',
+            'project-gallery__item--wide'
+          );
+        }
+      });
+    }
 
     wrapper.appendChild(img);
     return wrapper;
@@ -80,13 +101,19 @@
     var images = Array.isArray(config.images) ? config.images : [];
     var videos = Array.isArray(config.videos) ? config.videos : [];
     var projectName = config.projectName || 'Project';
+    var layout = config.layout || 'standard';
+
+    // Apply layout class to grid container
+    if (layout === 'portrait') {
+      container.classList.add('project-gallery__grid--portrait');
+    }
 
     // Clear any existing content (idempotent)
     container.innerHTML = '';
 
     // Render images first (FR-003, FR-005, FR-006)
     images.forEach(function (filename, i) {
-      container.appendChild(buildImageItem(folder, filename, projectName, i + 1, i));
+      container.appendChild(buildImageItem(folder, filename, projectName, i + 1, i, layout));
     });
 
     // Render videos after images; cycle index continues from images.length (FR-009)
