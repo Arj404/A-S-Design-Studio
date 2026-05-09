@@ -150,6 +150,9 @@
     <link rel="stylesheet" href="../assets/css/responsive.css" />
     <link rel="stylesheet" href="../assets/css/project-page.css" />
 
+    <!-- Gallery -->
+    <script src="../assets/js/gallery.js" defer></script>
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../assets/images/general/title-logo.png" />
     <link rel="apple-touch-icon" href="../assets/images/general/title-logo.png" />
@@ -263,55 +266,7 @@
 
     <!-- Project Gallery -->
     <section class="project-gallery">
-      <div class="project-gallery__grid">
-        <div class="project-gallery__item project-gallery__item--large">
-          <img
-            src="../assets/images/projects/cp67jan2024/83309.jpg"
-            alt="Kapkids CP67 - Store Interior"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item">
-          <img
-            src="../assets/images/projects/cp67jan2024/6f462.jpg"
-            alt="Kapkids CP67 - Display Area"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item">
-          <img
-            src="../assets/images/projects/cp67jan2024/57999.jpg"
-            alt="Kapkids CP67 - Store Layout"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item project-gallery__item--wide">
-          <video
-            controls
-            poster="assets/images/projects/cp67jan2024/83309.jpg"
-            style="width: 100%; height: 100%; object-fit: cover"
-          >
-            <source
-              src="../assets/images/projects/cp67jan2024/091e2.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <div class="project-gallery__item project-gallery__item--large">
-          <video
-            controls
-            poster="assets/images/projects/cp67jan2024/6f462.jpg"
-            style="width: 100%; height: 100%; object-fit: cover"
-          >
-            <source
-              src="../assets/images/projects/cp67jan2024/08c62.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
+      <div id="project-gallery" class="project-gallery__grid"></div>
     </section>
 
     <!-- Project Navigation -->
@@ -655,6 +610,17 @@
       gtag("js", new Date());
       gtag("config", "G-22YTD838Q8");
       gtag("config", "AW-17589888831");
+    </script>
+    <script>
+      window.GALLERY_CONFIG = {
+        folder: '../assets/images/projects/cp67jan2024/',
+        images: [
+          '83309.jpg', '6f462.jpg', '57999.jpg',
+          '24ea2.jpeg', '34997.jpeg', '5489e.jpeg', '78426.jpeg', '84238.jpeg'
+        ],
+        projectName: 'Kapkids CP67',
+        videos: ['091e2.mp4', '08c62.mp4']
+      };
     </script>
   </body>
 </html>

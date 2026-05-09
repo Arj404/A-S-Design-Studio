@@ -151,6 +151,9 @@
     <link rel="stylesheet" href="../assets/css/responsive.css" />
     <link rel="stylesheet" href="../assets/css/project-page.css" />
 
+    <!-- Gallery -->
+    <script src="../assets/js/gallery.js" defer></script>
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../assets/images/general/title-logo.png" />
     <link rel="apple-touch-icon" href="../assets/images/general/title-logo.png" />
@@ -264,57 +267,7 @@
 
     <!-- Project Gallery -->
     <section class="project-gallery">
-      <div class="project-gallery__grid">
-        <div class="project-gallery__item project-gallery__item--large">
-          <img
-            src="../assets/images/projects/Yamunanagar City Mall/e6fcd.jpg"
-            alt="City Mall Yamunanagar - Main View"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item">
-          <img
-            src="../assets/images/projects/Yamunanagar City Mall/ad2d0.jpg"
-            alt="City Mall Yamunanagar - Interior Detail"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item">
-          <img
-            src="../assets/images/projects/Yamunanagar City Mall/36543.jpg"
-            alt="City Mall Yamunanagar - Retail Space"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item project-gallery__item--wide">
-          <img
-            src="../assets/images/projects/Yamunanagar City Mall/b492e.jpg"
-            alt="City Mall Yamunanagar - Mall Layout"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item">
-          <img
-            src="../assets/images/projects/Yamunanagar City Mall/dbde7.jpg"
-            alt="City Mall Yamunanagar - Commercial Design"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item">
-          <img
-            src="../assets/images/projects/Yamunanagar City Mall/ffbac.jpg"
-            alt="City Mall Yamunanagar - Interior View"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item project-gallery__item--large">
-          <img
-            src="../assets/images/projects/Yamunanagar City Mall/3bcf7.jpg"
-            alt="City Mall Yamunanagar - Architecture Detail"
-            loading="lazy"
-          />
-        </div>
-      </div>
+      <div id="project-gallery" class="project-gallery__grid"></div>
     </section>
 
     <!-- Project Navigation -->
@@ -657,6 +610,16 @@
       gtag("js", new Date());
       gtag("config", "G-22YTD838Q8");
       gtag("config", "AW-17589888831");
+    </script>
+    <script>
+      window.GALLERY_CONFIG = {
+        folder: '../assets/images/projects/Yamunanagar City Mall/',
+        images: [
+          'e6fcd.jpg', 'ad2d0.jpg', '36543.jpg', 'b492e.jpg',
+          'dbde7.jpg', 'ffbac.jpg', '3bcf7.jpg'
+        ],
+        projectName: 'Yamunanagar City Mall'
+      };
     </script>
   </body>
 </html>

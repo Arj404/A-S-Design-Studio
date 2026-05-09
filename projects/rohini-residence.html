@@ -150,6 +150,9 @@
     <link rel="stylesheet" href="../assets/css/responsive.css" />
     <link rel="stylesheet" href="../assets/css/project-page.css" />
 
+    <!-- Gallery -->
+    <script src="../assets/js/gallery.js" defer></script>
+
     <!-- Favicon -->
     <link
       rel="icon"
@@ -277,45 +280,8 @@
     </section>
 
     <!-- Project Gallery -->
-    <!-- ⚠️ Images pending: add filenames from assets/images/projects/rohiniapril2021/ -->
     <section class="project-gallery">
-      <div class="project-gallery__grid">
-        <div class="project-gallery__item project-gallery__item--large">
-          <img
-            src="../assets/images/projects/rohiniapril2021/d107e.jpg"
-            alt="Rohini Residence - Main Living Area"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item">
-          <img
-            src="../assets/images/projects/rohiniapril2021/3d59f.jpg"
-            alt="Rohini Residence - Double Height Living Space"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item">
-          <img
-            src="../assets/images/projects/rohiniapril2021/79a38.jpg"
-            alt="Rohini Residence - Interior Detail"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item project-gallery__item--wide">
-          <img
-            src="../assets/images/projects/rohiniapril2021/ce90d.jpg"
-            alt="Rohini Residence - Skylight and Screen Wall"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item">
-          <img
-            src="../assets/images/projects/rohiniapril2021/fc6af.jpg"
-            alt="Rohini Residence - Material and Finish Detail"
-            loading="lazy"
-          />
-        </div>
-      </div>
+      <div id="project-gallery" class="project-gallery__grid"></div>
     </section>
 
     <!-- Project Navigation -->
@@ -389,5 +355,14 @@
 
     <!-- Scripts -->
     <script src="../assets/js/main.js"></script>
+    <script>
+      window.GALLERY_CONFIG = {
+        folder: '../assets/images/projects/rohiniapril2021/',
+        images: [
+          '3d59f.jpg', '79a38.jpg', 'ce90d.jpg', 'd107e.jpg', 'fc6af.jpg'
+        ],
+        projectName: 'Rohini Residence'
+      };
+    </script>
   </body>
 </html>

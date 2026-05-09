@@ -154,6 +154,9 @@
     <link rel="stylesheet" href="../assets/css/responsive.css" />
     <link rel="stylesheet" href="../assets/css/project-page.css" />
 
+    <!-- Gallery -->
+    <script src="../assets/js/gallery.js" defer></script>
+
     <!-- Favicon -->
     <link
       rel="icon"
@@ -291,71 +294,7 @@
 
     <!-- Project Gallery -->
     <section class="project-gallery">
-      <div class="project-gallery__grid">
-        <div class="project-gallery__item project-gallery__item--large">
-          <img
-            src="../assets/images/projects/KapsonsSolanOct2023/e878e.webp"
-            alt="Kapsons Solan - Main Store View"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item">
-          <img
-            src="../assets/images/projects/KapsonsSolanOct2023/93797.webp"
-            alt="Kapsons Solan - Interior Detail"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item">
-          <img
-            src="../assets/images/projects/KapsonsSolanOct2023/4d841.webp"
-            alt="Kapsons Solan - Display Area"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item project-gallery__item--wide">
-          <img
-            src="../assets/images/projects/KapsonsSolanOct2023/c5e8c.webp"
-            alt="Kapsons Solan - Store Layout"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item">
-          <img
-            src="../assets/images/projects/KapsonsSolanOct2023/68a62.webp"
-            alt="Kapsons Solan - Merchandise Display"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item">
-          <img
-            src="../assets/images/projects/KapsonsSolanOct2023/f0058.webp"
-            alt="Kapsons Solan - Interior View"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item project-gallery__item--large">
-          <img
-            src="../assets/images/projects/KapsonsSolanOct2023/fcc88.webp"
-            alt="Kapsons Solan - Retail Space"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item">
-          <img
-            src="../assets/images/projects/KapsonsSolanOct2023/ce3d0.webp"
-            alt="Kapsons Solan - Design Detail"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item">
-          <img
-            src="../assets/images/projects/KapsonsSolanOct2023/3e6b8.webp"
-            alt="Kapsons Solan - Store Front"
-            loading="lazy"
-          />
-        </div>
-      </div>
+      <div id="project-gallery" class="project-gallery__grid"></div>
     </section>
 
     <!-- Project Navigation -->
@@ -698,6 +637,17 @@
       gtag("js", new Date());
       gtag("config", "G-22YTD838Q8");
       gtag("config", "AW-17589888831");
+    </script>
+    <script>
+      window.GALLERY_CONFIG = {
+        folder: '../assets/images/projects/KapsonsSolanOct2023/',
+        images: [
+          '3e6b8.webp', '4d841.webp', '68a62.webp', '93797.webp',
+          'c5e8c.webp', 'ce3d0.webp', 'e066e.png', 'e878e.webp',
+          'f0058.webp', 'fcc88.webp'
+        ],
+        projectName: 'Kapsons Solan'
+      };
     </script>
   </body>
 </html>

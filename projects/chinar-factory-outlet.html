@@ -150,6 +150,9 @@
     <link rel="stylesheet" href="../assets/css/responsive.css" />
     <link rel="stylesheet" href="../assets/css/project-page.css" />
 
+    <!-- Gallery -->
+    <script src="../assets/js/gallery.js" defer></script>
+
     <!-- Favicon -->
     <link
       rel="icon"
@@ -270,92 +273,7 @@
 
     <!-- Project Gallery -->
     <section class="project-gallery">
-      <div class="project-gallery__grid">
-        <div class="project-gallery__item project-gallery__item--large">
-          <img
-            src="../assets/images/projects/ChinarOct2025/82faf.webp"
-            alt="Chinar Factory Outlet - Main View"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item">
-          <img
-            src="../assets/images/projects/ChinarOct2025/88f03.webp"
-            alt="Chinar Factory Outlet - Interior Detail"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item">
-          <img
-            src="../assets/images/projects/ChinarOct2025/3b9df.webp"
-            alt="Chinar Factory Outlet - Display Area"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item project-gallery__item--wide">
-          <img
-            src="../assets/images/projects/ChinarOct2025/6dcd9.webp"
-            alt="Chinar Factory Outlet - Store Layout"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item">
-          <img
-            src="../assets/images/projects/ChinarOct2025/24408.webp"
-            alt="Chinar Factory Outlet - Merchandise Display"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item">
-          <img
-            src="../assets/images/projects/ChinarOct2025/ec244.webp"
-            alt="Chinar Factory Outlet - Interior View"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item project-gallery__item--large">
-          <img
-            src="../assets/images/projects/ChinarOct2025/49dd6.webp"
-            alt="Chinar Factory Outlet - Retail Space"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item">
-          <img
-            src="../assets/images/projects/ChinarOct2025/99295.webp"
-            alt="Chinar Factory Outlet - Design Detail"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item">
-          <img
-            src="../assets/images/projects/ChinarOct2025/5ab82.webp"
-            alt="Chinar Factory Outlet - Store Front"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item project-gallery__item--wide">
-          <img
-            src="../assets/images/projects/ChinarOct2025/23d60.webp"
-            alt="Chinar Factory Outlet - Shopping Area"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item">
-          <img
-            src="../assets/images/projects/ChinarOct2025/6c021.webp"
-            alt="Chinar Factory Outlet - Interior Architecture"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item">
-          <img
-            src="../assets/images/projects/ChinarOct2025/26ad6.webp"
-            alt="Chinar Factory Outlet - Final View"
-            loading="lazy"
-          />
-        </div>
-      </div>
+      <div id="project-gallery" class="project-gallery__grid"></div>
     </section>
 
     <!-- Project Navigation -->
@@ -700,6 +618,17 @@
       gtag("js", new Date());
       gtag("config", "G-22YTD838Q8");
       gtag("config", "AW-17589888831");
+    </script>
+    <script>
+      window.GALLERY_CONFIG = {
+        folder: '../assets/images/projects/ChinarOct2025/',
+        images: [
+          '82faf.webp', '88f03.webp', '3b9df.webp', '6dcd9.webp',
+          '24408.webp', 'ec244.webp', '49dd6.webp', '99295.webp',
+          '5ab82.webp', '23d60.webp', '6c021.webp', '26ad6.webp'
+        ],
+        projectName: 'Chinar Factory Outlet'
+      };
     </script>
   </body>
 </html>

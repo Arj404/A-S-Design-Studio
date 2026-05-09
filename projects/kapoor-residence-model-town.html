@@ -150,6 +150,9 @@
     <link rel="stylesheet" href="../assets/css/responsive.css" />
     <link rel="stylesheet" href="../assets/css/project-page.css" />
 
+    <!-- Gallery -->
+    <script src="../assets/js/gallery.js" defer></script>
+
     <!-- Favicon -->
     <link
       rel="icon"
@@ -277,43 +280,7 @@
 
     <!-- Project Gallery -->
     <section class="project-gallery">
-      <div class="project-gallery__grid">
-        <div class="project-gallery__item project-gallery__item--large">
-          <img
-            src="../assets/images/projects/KapoorResidenceModelTownjan2020/d1571.jpg"
-            alt="Kapoor Residence - Living Room Main View"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item">
-          <img
-            src="../assets/images/projects/KapoorResidenceModelTownjan2020/a1761.jpg"
-            alt="Kapoor Residence - Living Room and Dining Area"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item">
-          <img
-            src="../assets/images/projects/KapoorResidenceModelTownjan2020/6b307.jpg"
-            alt="Kapoor Residence - Statement Staircase"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item project-gallery__item--wide">
-          <img
-            src="../assets/images/projects/KapoorResidenceModelTownjan2020/aac49.jpg"
-            alt="Kapoor Residence - Dining Area with Ornate Partition"
-            loading="lazy"
-          />
-        </div>
-        <div class="project-gallery__item">
-          <img
-            src="../assets/images/projects/KapoorResidenceModelTownjan2020/b12c1.jpg"
-            alt="Kapoor Residence - Dining and Lounge Overview"
-            loading="lazy"
-          />
-        </div>
-      </div>
+      <div id="project-gallery" class="project-gallery__grid"></div>
     </section>
 
     <!-- Project Navigation -->
@@ -387,5 +354,17 @@
 
     <!-- Scripts -->
     <script src="../assets/js/main.js"></script>
+    <script>
+      window.GALLERY_CONFIG = {
+        folder: '../assets/images/projects/KapoorResidenceModelTownjan2020/',
+        images: [
+          '03782.jpg', '0d6f5.jpg', '0e728.jpg', '1cfcc.jpg',
+          '40504.jpg', '43a24.jpg', '583c2.jpg', '6a183.jpg',
+          '6b307.jpg', '8c9bb.jpg', '9ec38.jpg', 'a1761.jpg',
+          'aac49.jpg', 'b12c1.jpg', 'bef28.jpg', 'd1571.jpg'
+        ],
+        projectName: 'Kapoor Residence Model Town'
+      };
+    </script>
   </body>
 </html>
