@@ -230,3 +230,57 @@ describe('applyMapToHtml', () => {
     assert.equal(replacements, 0);
   });
 });
+
+// ---------------------------------------------------------------------------
+// applyMapToHtml — folder-filter behaviour (simulates --folder flag)
+// When only a subset of the map is passed (entries for the target folder only),
+// references for other folders must remain unchanged.
+// ---------------------------------------------------------------------------
+
+describe('applyMapToHtml with folder-filtered map', () => {
+  test('only renames entries whose folder is included in the map', () => {
+    const content = [
+      '<img src="assets/images/projects/NewProjectMay2026/RAW_001.jpg" />',
+      '<img src="assets/images/projects/ChinarOct2025/IMG_1873.webp" />',
+    ].join('\n');
+
+    // Map contains only the new project — simulates --folder NewProjectMay2026
+    const filteredMap = [
+      { folder: 'NewProjectMay2026', old: 'RAW_001.jpg', new: 'x1y2z.jpg' },
+    ];
+
+    const { content: result, replacements } = applyMapToHtml(content, filteredMap);
+
+    // New project file is renamed
+    assert.ok(result.includes('NewProjectMay2026/x1y2z.jpg'));
+    assert.ok(!result.includes('RAW_001.jpg'));
+
+    // Existing project file is untouched
+    assert.ok(result.includes('ChinarOct2025/IMG_1873.webp'));
+    assert.equal(replacements, 1);
+  });
+
+  test('handles a new project folder with multiple files in one pass', () => {
+    const content = [
+      '<img src="assets/images/projects/NewShowroomJune2026/photo_01.jpeg" />',
+      '<img src="assets/images/projects/NewShowroomJune2026/photo_02.jpeg" />',
+      '<img src="assets/images/projects/NewShowroomJune2026/photo_03.jpeg" />',
+    ].join('\n');
+
+    const filteredMap = [
+      { folder: 'NewShowroomJune2026', old: 'photo_01.jpeg', new: 'aa111.jpeg' },
+      { folder: 'NewShowroomJune2026', old: 'photo_02.jpeg', new: 'bb222.jpeg' },
+      { folder: 'NewShowroomJune2026', old: 'photo_03.jpeg', new: 'cc333.jpeg' },
+    ];
+
+    const { content: result, replacements } = applyMapToHtml(content, filteredMap);
+
+    assert.ok(result.includes('NewShowroomJune2026/aa111.jpeg'));
+    assert.ok(result.includes('NewShowroomJune2026/bb222.jpeg'));
+    assert.ok(result.includes('NewShowroomJune2026/cc333.jpeg'));
+    assert.ok(!result.includes('photo_01'));
+    assert.ok(!result.includes('photo_02'));
+    assert.ok(!result.includes('photo_03'));
+    assert.equal(replacements, 3);
+  });
+});
